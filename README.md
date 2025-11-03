@@ -2,7 +2,7 @@
 
 ![React](https://img.shields.io/badge/React-19.1.1-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7.1.7-646CFF?logo=vite&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-x.x-7952B3?logo=bootstrap&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3.8-7952B3?logo=bootstrap&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-9.36.0-646CFF?logo=eslint&logoColor=white)
 ![License](https://img.shields.io/badge/Licence-CEF_Private-lightgrey)
 ![Status](https://img.shields.io/badge/Status-En%20cours-orange)
@@ -72,3 +72,14 @@ Le projet fera l’objet :
 - et d’un README complet avec badges, démo et remerciements.
 
 🧱 README provisoire : Il sera enrichi au fur et à mesure du développement (installation Bootstrap, React Router, modale GitHub, etc.)
+
+---
+
+🧱 **Mise à jour - 3 novembre 2025**
+- Initialisation de la structure du projet React (Vite + Bootstrap)
+- Nettoyage des fichiers du projet
+- Ajout des fichiers `reset.css` et `global.css`
+- Intégration de la police *Nunito Sans*
+- Mise en place du favicon PNG
+
+---

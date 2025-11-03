@@ -1,0 +1,27 @@
+@import './reset.css';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* ==========================================
+   GLOBAL STYLES
+   ========================================== */
+
+:root {
+  /*
+  --color-primary: ;
+  --color-text: ;
+  --color-bg: ;
+  */
+}
+
+/* Typographie */
+body {
+  margin: 0;
+  font-family: "Nunito Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* Titres et <strong> */
+h1, h2, h3, h4, h5, h6,
+strong {
+  font-weight: 600;
+}
