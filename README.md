@@ -13,6 +13,19 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
 
 ---
 
+## SOMMAIRE
+
+- [🚀 Objectifs du projet](#-objectifs-du-projet)
+- [🛠️ Technologies utilisées](#-technologies-utilisées)
+- [📦 Installation du projet](#-installation-du-projet)
+- [🧑‍💻 Auteur](#-auteur)
+- [✅ Validation finale](#-validation-finale)
+- [🔄 Historique des mises à jour](#-historique-des-mises-à-jour)
+  - [Issue #1 - Initialisation du projet](#-issue-1--initialisation-du-projet)
+  - [Issue #2 - Navbar + Routes + Footer](#-issue-2--navbar--routes--footer)
+
+---
+
 ## 🚀 Objectifs du projet
 
 - Créer une application React fonctionnelle et responsive (mobile / tablette / desktop),
@@ -69,17 +82,35 @@ npm run dev
 Le projet fera l’objet :
 - de commits explicites (Closes #1, etc.),
 - de captures de validation W3C,
-- et d’un README complet avec badges, démo et remerciements.
+- et d’un README complet.
 
-🧱 README provisoire : Il sera enrichi au fur et à mesure du développement (installation Bootstrap, React Router, modale GitHub, etc.)
+🧱 README provisoire : Il sera enrichi au fur et à mesure du développement.
 
 ---
 
-🧱 **Mise à jour - 3 novembre 2025**
+## 🔄 Historique des mises à jour
+
+### Issue #1 - Initialisation du projet
 - Initialisation de la structure du projet React (Vite + Bootstrap)
 - Nettoyage des fichiers du projet
 - Ajout des fichiers `reset.css` et `global.css`
 - Intégration de la police *Nunito Sans*
 - Mise en place du favicon PNG
+
+*Mise à jour - 3 novembre 2025*
+
+---
+
+### Issue #2 - Navbar + Routes + Footer
+
+- Installation de la dépendance `react-router-dom`
+- Création et intégration de la `Navbar` (Bootstrap + React Router)
+- Ajout du `Footer` placeholder commun
+- Mise en place des routes : `/`, `/services`, `/portfolio`, `contact`, `/mentions-légales`
+- Gestion du lien actif et des effets hover (CSS)
+- Vérification du responsive (menu burger)
+- Respect de la palette Bootstrap (`bg-dark`, `text-light`) et ajustement via CSS
+
+*Mise à jour - 5 novembre 2025*
 
 ---
