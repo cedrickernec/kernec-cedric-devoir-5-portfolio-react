@@ -4,8 +4,8 @@ import {NavLink} from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div className="container">
-        <NavLink className="navbar-brand fw-bold" to="/">
+      <div className="container-fluid px-3 px-md-4 px-lg-5">
+        <NavLink className="navbar-brand" to="/">
           JOHN DOE
         </NavLink>
         <button
@@ -27,7 +27,7 @@ export default function Navbar() {
                   className={({ isActive, isPending }) =>
                   isPending ? "nav-link pending" :
                   isActive ? "nav-link active" : "nav-link"}>
-                  Accueil
+                    Accueil
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -35,7 +35,7 @@ export default function Navbar() {
                   className={({ isActive, isPending }) =>
                   isPending ? "nav-link pending" :
                   isActive ? "nav-link active" : "nav-link"}>
-                  Services
+                    Services
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -43,7 +43,7 @@ export default function Navbar() {
                   className={({ isActive, isPending }) =>
                   isPending ? "nav-link pending" :
                   isActive ? "nav-link active" : "nav-link"}>
-                  Portfolio
+                    Portfolio
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -51,7 +51,7 @@ export default function Navbar() {
                   className={({ isActive, isPending }) =>
                   isPending ? "nav-link pending" :
                   isActive ? "nav-link active" : "nav-link"}>
-                  Contact
+                    Contact
                 </NavLink>
               </li>
               <li className="nav-item">
@@ -59,7 +59,7 @@ export default function Navbar() {
                   className={({ isActive, isPending }) =>
                   isPending ? "nav-link pending" :
                   isActive ? "nav-link active" : "nav-link"}>
-                  Mentions Légales
+                    Mentions Légales
                 </NavLink>
               </li>
             </ul>
