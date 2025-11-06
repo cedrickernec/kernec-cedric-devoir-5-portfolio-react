@@ -114,3 +114,28 @@ Le projet fera l’objet :
 *Mise à jour - 5 novembre 2025*
 
 ---
+
+### Issue #3 - Footer commun
+
+- Création du composant `Footer.jsx` :
+  - Structure en 3 colonnes (coordonnées, liens utiles, réalisations)
+  - Intégration des icônes Bootstrap (GitHub, Twitter, LinkedIn)
+  - Liens internes gérés via `NavLink` de React Router DOM
+  - Application de classes utilitaires Bootstrap pour la mise en page responsive
+  - Gestion du hover sur les icônes sociales
+- Ajustement du layout global (`global.css`) :
+  - Mise en place du `display: flex` et `min-height: 100vh` sur `#root`
+  - Alignement du footer en bas de page (sticky footer)
+  - Harmonisation des paddings horizontaux
+- Ajustement léger de la Navbar :
+  - Suppression du `fs-bold` sur le logo textuel
+  - Ajustement des paddings horizontaux
+
+### Correctif mineur
+
+- Correction de l'attribut `rel="noopener noreferrer"` pour les liens externes
+- Documentation mise à jour (`README.md`)
+
+  *Mise à jour - 6 novembre 2025*
+
+---

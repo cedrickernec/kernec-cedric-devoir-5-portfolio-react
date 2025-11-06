@@ -19,7 +19,7 @@ export default function Footer() {
               href="https://github.com/"
               className="text-secondary me-3"
               target="_blank"
-              rel="nooperner noreferrer"
+              rel="noopener noreferrer"
               aria-label="Lien vers le profil GitHub"
               title="GitHub">
                 <i className="bi bi-github fs-4" aria-hidden="true"></i>
@@ -28,7 +28,7 @@ export default function Footer() {
               href="https://x.com/"
               className="text-secondary me-3"
               target="_blank"
-              rel="nooperner noreferrer"
+              rel="noopenner noreferrer"
               aria-label="Lien vers le profil Twitter"
               title="Twitter">
                 <i className="bi bi-twitter fs-4" aria-hidden="true"></i>
@@ -37,7 +37,7 @@ export default function Footer() {
               href="https://linkedin.com/"
               className="text-secondary"
               target="_blank"
-              rel="nooperner noreferrer"
+              rel="noopener noreferrer"
               aria-label="Lien vers le profil LinkedIn"
               title="LinkedIn">
                 <i className="bi bi-linkedin fs-4" aria-hidden="true"></i>
