@@ -18,11 +18,13 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
 - [🚀 Objectifs du projet](#-objectifs-du-projet)
 - [🛠️ Technologies utilisées](#-technologies-utilisées)
 - [📦 Installation du projet](#-installation-du-projet)
-- [🧑‍💻 Auteur](#-auteur)
+- [🧑‍💻 Auteur](#--auteur)
 - [✅ Validation finale](#-validation-finale)
 - [🔄 Historique des mises à jour](#-historique-des-mises-à-jour)
-  - [Issue #1 - Initialisation du projet](#-issue-1--initialisation-du-projet)
-  - [Issue #2 - Navbar + Routes + Footer](#-issue-2--navbar--routes--footer)
+  - [Issue #1 - Initialisation du projet](#issue-1---initialisation-du-projet)
+  - [Issue #2 - Navbar + Routes + Footer](#issue-2---navbar--routes--footer)
+  - [Issue #3 - Footer commun](#issue-3--footer-commun)
+  - [Issue #4 - Home (Hero + About + Skills)](#issue-4--home-hero--about--skills)
 
 ---
 
@@ -136,6 +138,25 @@ Le projet fera l’objet :
 - Correction de l'attribut `rel="noopener noreferrer"` pour les liens externes
 - Documentation mise à jour (`README.md`)
 
-  *Mise à jour - 6 novembre 2025*
+*Mise à jour - 6 novembre 2025*
 
 ---
+
+### Issue #4 - Home (Hero + About + Skills)
+
+- Importation des images dans `src/assets/images`
+- Création du hero `Hero.jsx` :
+  - Insertion de l'image d'arrière plan en pleine écran + overlay légé
+  - Mise en place des titres `h1` et `h2`
+  - Mise en place du bouton "En savoir plus"
+  - Création du fichier `home.css` pour les styles de la page d'accueil
+- Création du composant `AboutAndSkills.jsx`
+  - Création des titres de section via `SectionDivider.jsx` (avec ligne de marque de section)
+  - Mise en forme 2 colonnes desktop/tablet et 1 colonne sur mobile
+  - Alignement responsive du contenu avec le footer
+
+### Correctif mineur
+
+- Suppression du `mt-5` du footer
+
+*Mise à jour - 7 novembre 2025*
