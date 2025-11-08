@@ -39,6 +39,10 @@ strong {
   font-weight: 600;
 }
 
+.divider-line {
+  height: 4px;
+}
+
 /* Navbar */
 .nav-link {
   text-transform: uppercase;
