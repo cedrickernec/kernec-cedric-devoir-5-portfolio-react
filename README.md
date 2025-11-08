@@ -154,9 +154,11 @@ Le projet fera l’objet :
   - Création des titres de section via `SectionDivider.jsx` (avec ligne de marque de section)
   - Mise en forme 2 colonnes desktop/tablet et 1 colonne sur mobile
   - Alignement responsive du contenu avec le footer
+- Intégration de la modale API GitHub (placeholder)
 
 ### Correctif mineur
 
 - Suppression du `mt-5` du footer
+- Rectification de la fonctionnalité du "sommaire" du README.md
 
-*Mise à jour - 7 novembre 2025*
+*Mise à jour - 8 novembre 2025*
