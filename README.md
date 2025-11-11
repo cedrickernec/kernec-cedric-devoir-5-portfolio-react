@@ -15,16 +15,16 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
 
 ## SOMMAIRE
 
-- [🚀 Objectifs du projet](#-objectifs-du-projet)
-- [🛠️ Technologies utilisées](#-technologies-utilisées)
-- [📦 Installation du projet](#-installation-du-projet)
-- [🧑‍💻 Auteur](#--auteur)
-- [✅ Validation finale](#-validation-finale)
-- [🔄 Historique des mises à jour](#-historique-des-mises-à-jour)
+- [Objectifs du projet](#objectifs-du-projet)
+- [Technologies utilisées](#technologies-utilisees)
+- [Installation du projet](#installation-du-projet)
+- [Auteur](#auteur)
+- [Validation finale](#validation-finale)
+- [Historique des mises à jour](#historique-des-mises-à-jour)
   - [Issue #1 - Initialisation du projet](#issue-1---initialisation-du-projet)
   - [Issue #2 - Navbar + Routes + Footer](#issue-2---navbar--routes--footer)
-  - [Issue #3 - Footer commun](#issue-3--footer-commun)
-  - [Issue #4 - Home (Hero + About + Skills)](#issue-4--home-hero--about--skills)
+  - [Issue #3 - Footer commun](#issue-3---footer-commun)
+  - [Issue #4 - Home (Hero + About + Skills)](#issue-4---home-hero--about--skills)
 
 ---
 
@@ -133,7 +133,7 @@ Le projet fera l’objet :
   - Suppression du `fs-bold` sur le logo textuel
   - Ajustement des paddings horizontaux
 
-### Correctif mineur
+### Correctifs mineurs
 
 - Correction de l'attribut `rel="noopener noreferrer"` pour les liens externes
 - Documentation mise à jour (`README.md`)
@@ -156,9 +156,35 @@ Le projet fera l’objet :
   - Alignement responsive du contenu avec le footer
 - Intégration de la modale API GitHub (placeholder)
 
-### Correctif mineur
+### Correctifs mineurs
 
 - Suppression du `mt-5` du footer
-- Rectification de la fonctionnalité du "sommaire" du README.md
+- Rectification de la fonctionnalité du "sommaire" du `README.md`
 
 *Mise à jour - 8 novembre 2025*
+
+---
+
+### Issue #5 - Services (Card + Titre)
+
+- Import et intégration de la bannière décorative
+- Adaptation du composant `SectionDivider.jsx` et création de deux variants
+- Mise en forme des cards Services 3 colonnes sur desktop/tablet et 1 colonne sur mobile
+- Création et application d'un CSS global pour les cards `.card-hover`. Au survol :
+  - Ombre douce (Bootstrap)
+  - Background légèrement plus sombre (gris)
+- Intégration des icônes décorative Bootstrap pour chaque card
+- Respect de la sémantique des titres :
+  - `<h1>` (hidden) pour le titre de la page
+  - `<h2>` pour le titre de section
+  - `<h3>` pour les titres de sous-section (services)
+
+### Correctifs mineurs
+
+- Positionnement du `main` en fonction de la navbar (global) + adaptation de la hauteur du `hero` (Home page)
+- Modification du composant `SectionDivider.jsx` dans l'objectif' d'adapter sémantiquement le titre des sections (adaptation des appels du composant dans `AboutAndSkills.jsx`) + Ajout de `aria-hidden` pour ignorer l'elément au niveau accessibilité
+- Suppression de `.divider-line` dans `global.css` qui est maintenant géré directement dans le composant `SectionDivider.jsx`
+- Ajustement des paddings responsive du `Footer` et du `Main` via la création d'un composant global `Container.jsx`
+- Rectification de la fonctionnalité du "sommaire" du `README.md`
+
+*Mise à jour - 11 novembre 2025*

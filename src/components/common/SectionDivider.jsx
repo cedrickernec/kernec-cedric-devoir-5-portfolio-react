@@ -1,8 +1,30 @@
-export default function SectionDivider({title}) {
+export default function SectionDivider({
+  level = "h2",
+  title,
+  paragraph,
+  variant = "default"}) {
+
+  const Heading = level;
+
+  const isCentered = variant === "centered";
+
+  const DividerStyle = {
+    height: isCentered ? "5px" : "3px",
+    width: isCentered ? "30vw" : "100%",
+  }
+
   return (
-    <div className="section-divider mb-4">
-      <h3 className="fw-bold">{title}</h3>
-      <div className="divider-line bg-primary mt-2"></div>
+    <div className={`${isCentered ? "text-center mb-5" : "text-start mb-4"}`}>
+      <Heading className="fw-bold">{title}</Heading>
+
+      {paragraph && (
+        <p>{paragraph}</p>)}
+
+      <div
+      className={`divider-line bg-primary mt-2 ${isCentered ? "mx-auto" : ""}`}
+      style={DividerStyle}
+      aria-hidden="true">
+      </div>
     </div>
   )
 }
