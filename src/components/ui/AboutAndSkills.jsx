@@ -1,14 +1,19 @@
 import SectionDivider from "../common/SectionDivider";
+import Container from "../common/Container";
 
 export default function AboutAndSkills() {
   return (
     <section className="py-5">
-      <div className="container px-4 px-md-5 px-lg-6">
+      <Container>
         <div className="card shadow p-4">
           <div className="row">
             {/* Colonne gauche */}
             <div className="col-md-6">
-              <SectionDivider title="À propos" />
+              <SectionDivider
+              level="h3"
+              title="À propos"
+              variant="default"
+              />
               <img
                 src="src/assets/images/john-doe-about.jpg"
                 alt="Photo de John Doe au travail"
@@ -33,7 +38,11 @@ export default function AboutAndSkills() {
 
             {/* Colonne droite */}
             <div className="col-md-6">
-              <SectionDivider title="Mes compétences" />
+              <SectionDivider
+              level="h3"
+              title="Mes compétences"
+              variant="default"
+              />
               <label>HTML5 90%</label>
               <div className="progress mb-3">
                 <div
@@ -72,7 +81,7 @@ export default function AboutAndSkills() {
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

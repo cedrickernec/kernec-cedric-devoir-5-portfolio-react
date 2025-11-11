@@ -4,6 +4,10 @@
    GLOBAL STYLES
 ============================================= */
 
+:root {
+  --navbar-height:56px;
+}
+
 /* Layout global */
 html, body {
   height: 100%;
@@ -17,6 +21,7 @@ html, body {
 
 main {
   flex: 1;
+  padding-top: var(--navbar-height);
 }
 
 @media (min-width: 992px) {
@@ -37,10 +42,6 @@ body {
 h1, h2, h3, h4, h5, h6,
 strong {
   font-weight: 600;
-}
-
-.divider-line {
-  height: 4px;
 }
 
 /* Navbar */
@@ -82,4 +83,10 @@ footer a {
 
 footer a:hover {
   font-weight: 700;
+}
+
+/* Cards */
+.card-hover:hover {
+    background-color: #efefef;
+    box-shadow: var(--bs-box-shadow-sm);
 }

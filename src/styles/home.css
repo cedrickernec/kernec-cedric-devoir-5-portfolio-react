@@ -5,7 +5,7 @@
 .hero {
     position: relative;
     background-image: url('/src/assets/images/hero-bg.jpg');
-    min-height: 100vh;
+    min-height: calc(100vh - var(--navbar-height));
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

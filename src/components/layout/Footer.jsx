@@ -1,10 +1,11 @@
 // Footer commun avec navigation React Router + Bootstrap
 import {NavLink} from "react-router-dom";
+import Container from "../common/Container";
 
 export default function Footer() {
   return (
     <footer className="bg-dark text-white text-center py-5">
-      <div className="container px-4 px-md-5 px-lg-6">
+      <Container>
         <div className="row text-start">
 
           {/* Colonne 1 */}
@@ -116,7 +117,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }
