@@ -188,3 +188,15 @@ Le projet fera l’objet :
 - Rectification de la fonctionnalité du "sommaire" du `README.md`
 
 *Mise à jour - 11 novembre 2025*
+
+---
+
+### Issue #6 - Portfolio (Cards + Boutons)
+
+- 
+
+### Correctifs mineurs
+
+- Refactorisation des composants `Container.jsx` et `SectionDivider.jsx` afin d'y centraliser les propriétés globales utilisées sur l'ensemble du site (margin, padding, etc.)
+
+*Mise à jour - 12 novembre 2025*

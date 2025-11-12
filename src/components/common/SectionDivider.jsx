@@ -13,8 +13,12 @@ export default function SectionDivider({
     width: isCentered ? "30vw" : "100%",
   }
 
+  const containerClasses = isCentered
+    ? "text-center mb-5"
+    : "text-start mb-4";
+
   return (
-    <div className={`${isCentered ? "text-center mb-5" : "text-start mb-4"}`}>
+    <div className={containerClasses}>
       <Heading className="fw-bold">{title}</Heading>
 
       {paragraph && (

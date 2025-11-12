@@ -3,7 +3,7 @@ import Container from "../common/Container";
 
 export default function AboutAndSkills() {
   return (
-    <section className="py-5">
+    <section>
       <Container>
         <div className="card shadow p-4">
           <div className="row">
