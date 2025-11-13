@@ -193,7 +193,13 @@ Le projet fera l’objet :
 
 ### Issue #6 - Portfolio (Cards + Boutons)
 
-- 
+- Création de la page porfolio avec les composants `SectionDivider.jsx` et `CardPorfolio.jsx`
+- Création d'un fichier `project.js` dans `src/data` afin de centraliser les données des projets du portfolio et rendre le composant `CardPortfolio.jsx` plus facilement maintenable
+- Création des projets et importation des données dans `CardPorfolio.jsx` :
+  - Mise en forme des cards Services 3 colonnes sur desktop/tablet et 1 colonne sur mobile
+  - Réutilisation de la classe de style `.card-hover` sur les cards
+  - Création et intégration des boutons sur chaque projet (sans lien de redirection)
+    - Création d'une classe de style pour les boutons dans portfolio.css (`.btn-portfolio-hover`)
 
 ### Correctifs mineurs
 
