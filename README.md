@@ -25,6 +25,8 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
   - [Issue #2 - Navbar + Routes + Footer](#issue-2---navbar--routes--footer)
   - [Issue #3 - Footer commun](#issue-3---footer-commun)
   - [Issue #4 - Home (Hero + About + Skills)](#issue-4---home-hero--about--skills)
+  - [Issue #5 - Services (Card + Titre)](#issue-5---services-card--titre)
+  - [Issue #6 - Portfolio (Cards + Boutons)](#issue-6---portfolio-cards--boutons)
 
 ---
 
@@ -188,3 +190,21 @@ Le projet fera l’objet :
 - Rectification de la fonctionnalité du "sommaire" du `README.md`
 
 *Mise à jour - 11 novembre 2025*
+
+---
+
+### Issue #6 - Portfolio (Cards + Boutons)
+
+- Création de la page porfolio avec les composants `SectionDivider.jsx` et `CardPorfolio.jsx`
+- Création d'un fichier `project.js` dans `src/data` afin de centraliser les données des projets du portfolio et rendre le composant `CardPortfolio.jsx` plus facilement maintenable
+- Création des projets et importation des données dans `CardPorfolio.jsx` :
+  - Mise en forme des cards Services 3 colonnes sur desktop/tablet et 1 colonne sur mobile
+  - Réutilisation de la classe de style `.card-hover` sur les cards
+  - Création et intégration des boutons sur chaque projet (sans lien de redirection)
+    - Création d'une classe de style pour les boutons dans portfolio.css (`.btn-portfolio-hover`)
+
+### Correctifs mineurs
+
+- Refactorisation des composants `Container.jsx` et `SectionDivider.jsx` afin d'y centraliser les propriétés globales utilisées sur l'ensemble du site (margin, padding, etc.)
+
+*Mise à jour - 12 novembre 2025*

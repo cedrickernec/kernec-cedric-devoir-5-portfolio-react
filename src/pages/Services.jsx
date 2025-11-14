@@ -11,9 +11,7 @@ export default function Services() {
       alt="Bannière bleue abstraite pour la page Services"
       className="w-100"/>
 
-      <Container
-      aria-labelledby="services-title"
-      className="py-5">
+      <Container aria-labelledby="services-title">
 
         <h1
         id="services-title"

@@ -1,0 +1,7 @@
+/* ==========================================
+   PORTFOLIO STYLES
+============================================= */
+
+#portfolio-page .btn-primary:hover {
+    filter: brightness(150%);
+}
