@@ -25,6 +25,8 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
   - [Issue #2 - Navbar + Routes + Footer](#issue-2---navbar--routes--footer)
   - [Issue #3 - Footer commun](#issue-3---footer-commun)
   - [Issue #4 - Home (Hero + About + Skills)](#issue-4---home-hero--about--skills)
+  - [Issue #5 - Services (Card + Titre)](#issue-5---services-card--titre)
+  - [Issue #6 - Portfolio (Cards + Boutons)](#issue-6---portfolio-cards--boutons)
 
 ---
 
