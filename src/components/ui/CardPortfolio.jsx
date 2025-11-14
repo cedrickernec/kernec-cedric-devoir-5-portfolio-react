@@ -15,11 +15,10 @@ export default function CardPorfolio() {
               <h3 class="card-title fw-bold">{project.title}</h3>
               <p class="card-text">{project.description}</p>
               <a
-                type="button"
                 href={project.link || "#"}
                 className="btn btn-primary"
                 target="_blank"
-                rel="noopenner noreferrer">
+                rel="noopener noreferrer">
                 Voir le site
               </a>
             </div>
