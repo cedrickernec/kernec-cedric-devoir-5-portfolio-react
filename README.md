@@ -229,4 +229,4 @@ Le projet fera l’objet :
   - Style responsive via media queries
 - Ajustement du design du bouton + message succès
 
-*Mise à jour – 13 novembre 2025*
+*Mise à jour – 16 novembre 2025*
