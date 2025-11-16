@@ -27,6 +27,7 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
   - [Issue #4 - Home (Hero + About + Skills)](#issue-4---home-hero--about--skills)
   - [Issue #5 - Services (Card + Titre)](#issue-5---services-card--titre)
   - [Issue #6 - Portfolio (Cards + Boutons)](#issue-6---portfolio-cards--boutons)
+  - [Issue #7 – Contact (Formulaire + Coordonnées + Google Map)](#issue-7---contact-formulaire--coordonnées--google-map)
 
 ---
 
@@ -208,3 +209,24 @@ Le projet fera l’objet :
 - Refactorisation des composants `Container.jsx` et `SectionDivider.jsx` afin d'y centraliser les propriétés globales utilisées sur l'ensemble du site (margin, padding, etc.)
 
 *Mise à jour - 12 novembre 2025*
+
+### Issue #7 – Contact (Formulaire + Coordonnées + Google Map)
+
+- Création et intégration de la page `Contact.jsx`
+  - Mise en forme 2 colonnes desktop/tablet et 1 colonne sur mobile
+- Construction du formulaire de contact (`FormContact.jsx`) :
+  - Gestion des `useState` pour chaque champ (nom, email, téléphone, sujet, message)
+  - Système de validation dynamique (`onChange` / `onBlur`)
+  - Dictionnaires d’erreurs + affichage conditionnel (is-invalid, invalid-feedback)
+  - Message de succès dynamique et réinitialisation des champs
+- Intégration des coordonnées personnelles + icônes Bootstrap
+- Mise en place et intégration d'une Google Map intégrée (`iframe`) :
+  - Adaptation complète sur Desktop (map en hauteur pleine via flex)
+  - Adaptation sur mobile (hauteur fixe 400px)
+  - Wrapper `.map-wrapper` responsive
+- Ajustements CSS spécifiques (`contact.css`) :
+  - Gestion du layout via `.contact-row`, `.column-right`, `.map-wrapper`
+  - Style responsive via media queries
+- Ajustement du design du bouton + message succès
+
+*Mise à jour – 13 novembre 2025*

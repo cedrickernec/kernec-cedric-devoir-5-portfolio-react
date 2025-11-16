@@ -1,0 +1,38 @@
+/* ==========================================
+   CONTACT STYLES
+============================================= */
+
+/* Mes coordonnées */
+.contact-container p {
+    margin: 0;
+}
+
+.contact-row {
+    display: flex;
+    align-items: stretch;
+}
+
+.column-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.map-wrapper {
+    flex: 1;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* ==========================================
+   RESPONSIVE
+============================================= */
+
+@media (max-width: 767px) {
+    .map-wrapper {
+        height: 400px;
+        flex: unset;
+    }
+}
