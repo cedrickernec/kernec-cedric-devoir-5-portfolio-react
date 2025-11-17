@@ -39,7 +39,11 @@ export const mentionsSection = [
                 <p>91 rue du Faubourg Saint-Honoré, 75008 Paris</p>
                 <div className="d-flex gap-2 mt-2">
                     <i className="bi bi-globe" aria-hidden="true"/>
-                    <a href="https://www.alwaysdata.com" target="_blank" rel="noopener noreferrer">
+                    <a
+                    href="https://www.alwaysdata.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Ouvrir le site alwaysdata">
                         www.alwaysdata.com
                     </a>
                 </div>
@@ -61,7 +65,8 @@ export const mentionsSection = [
                     <a
                     href="https://www.centre-europeen-formation.fr/"
                     target="_blank"
-                    rel="noopener noreferrer">
+                    rel="noopener noreferrer"
+                    title="Ouvrir le site du Centre Européen de Formation">
                     Centre Européen de Formation
                     </a>
                     </p>
@@ -70,7 +75,8 @@ export const mentionsSection = [
                         <a
                         href="https://pixabay.com/"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        title="Ouvrir le site Pixabay">
                             Pixabay
                         </a>
                         </em>
@@ -80,7 +86,8 @@ export const mentionsSection = [
                         <a
                         href="https://www.flaticon.com/free-icons/john-doe"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        title="Acceder aux icônes John Doe sur le site Flaticon">
                             John Doe icons erstellt von Freepik - Flaticon
                         </a>
                         </em>
