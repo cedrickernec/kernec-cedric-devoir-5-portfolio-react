@@ -230,3 +230,29 @@ Le projet fera l’objet :
 - Ajustement du design du bouton + message succès
 
 *Mise à jour – 16 novembre 2025*
+
+### Issue #8 – Mentions légales (Accordéon)
+
+- Création et intégration de la page `MentionsLegales.jsx`
+- Desindexation de la page via `react-helmet`
+- Mise en place d’une structure sémantique :
+  - Section principale avec `aria-labelledby`
+  - Titre `h1` masqué visuellement
+  - Utilisation du composant `SectionDivider.jsx`
+- Création d’un accordéon Bootstrap fonctionnel comprenant :
+  - **Éditeur du site**
+  - **Hébergeur**
+  - **Crédits**
+- Gestion des états ouverts/fermés à l’initialisation via `collapse` / `show`
+- Injection propre des données via le tableau `mentionsData.jsx` dans le but de faciliter la maintenance
+- Intégration des coordonnées avec icônes Bootstrap (adresse, téléphone, email)
+- Intégration des crédits :
+  - Liens externes avec `target="_blank"` et `rel="noopener noreferrer"`
+  - Mise en forme en italique via `<em>`
+
+### Correctifs mineurs
+
+- Ajustement du margin-top de `divider-line` dans le composant `SectionDivider.jsx` pour correspondance avec la maquette
+  - `mt-2` → `mt-4`
+
+*Mise à jour - 12 novembre 2025*
