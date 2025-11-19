@@ -1,3 +1,5 @@
+import ModalGitHub from "../layout/ModalGitHub";
+
 export default function Hero() {
   return (
     <>
@@ -18,38 +20,7 @@ export default function Hero() {
       </section>
 
       {/* Modale GitHub */}
-      <div
-      className="modal"
-      id="githubModal"
-      tabIndex="-1"
-      aria-labelledby="githubModalLabel"
-      aria-hidden="true">
-        <div className="modal-dialog modal-dialog-centered">
-          <div className="modal-content bg-dark border text-white shadow-lg">
-            <div className="modal-header">
-              <h5 className="modal-title" id="githubModalLabel">Mon profil GitHub</h5>
-              <button
-              type="button"
-              className="btn-close btn-close-white"
-              data-bs-dismiss="modal"
-              aria-label="Fermer"></button>
-            </div>
-
-            <div className="modal-body text-center">
-              <p>Placeholder de la modale GitHub (intégration à venir)</p>
-            </div>
-
-            <div className="modal-footer">
-              <button
-              type="button"
-              className="btn btn-secondary rounded-3 px-4"
-              data-bs-dismiss="modal">
-                Fermer
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ModalGitHub/>      
     </>
   );
 }

@@ -28,6 +28,8 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
   - [Issue #5 - Services (Card + Titre)](#issue-5---services-card--titre)
   - [Issue #6 - Portfolio (Cards + Boutons)](#issue-6---portfolio-cards--boutons)
   - [Issue #7 – Contact (Formulaire + Coordonnées + Google Map)](#issue-7---contact-formulaire--coordonnées--google-map)
+  - [Issue #8 – Mentions légales (Accordéon)](#issue-8---mentions-legales-accordeon)
+  - [Issue #9 – Modale GitHub API](#issue-9---modale-github-api)
 
 ---
 
@@ -255,4 +257,28 @@ Le projet fera l’objet :
 - Ajustement du margin-top de `divider-line` dans le composant `SectionDivider.jsx` pour correspondance avec la maquette
   - `mt-2` → `mt-4`
 
-*Mise à jour - 12 novembre 2025*
+*Mise à jour - 17 novembre 2025*
+
+### Issue #9 - Modale GitHub API
+
+- Création du composant `ModalGitHubItem.jsx` pour structurer l'affichage des informations
+- Mise en place d'un tableau de donnée `githubFields` dans `modalGitHubData.js` (clé, icône, type, href, label)
+- Intégration des données et des icônes conformément aux maquettes (avatar, nom avec lien externe vers le profil github, localisation, biographie, repositories, followers et following)
+- Mise en forme de la modale :
+  - centrage de la modale dans le viewport
+  - 2 colonnes desktop/tablet et 1 colonne sur mobile
+  - séparation des items par une bordure
+  - item comportant un padding-start n'affectant pas les bordures
+  - application de `float: left` sur les icônes pour les intégrer à leur paragraphe respectif
+- `header` et `footer` de la modale mis en place lors de la création de la modale en `placeholder` (issue #4)
+  - Titre h5
+  - Bouton de fermeture de la modale : croix + bouton "Fermer"
+- Les couleurs des bordures ont été corrigées
+
+### Correctifs mineurs
+
+- Docs (README) :
+  - Correction de la date de mise à jour de l'issue #8
+  - Intégration de la mise à jour de l'issue #8 dans le sommaire
+
+*Mise à jour - 18 novembre 2025*
