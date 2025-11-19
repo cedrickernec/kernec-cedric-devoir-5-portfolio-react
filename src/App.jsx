@@ -10,19 +10,19 @@ import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
 export default function App() {
-	return (
-		<BrowserRouter>
-			<Navbar/>
-			<main>
-				<Routes>
-					<Route path="/" element={<Home/>} />
-					<Route path="/services" element={<Services/>} />
-					<Route path="/portfolio" element={<Portfolio/>} />
-					<Route path="/contact" element={<Contact/>} />
-					<Route path="/mentions-legales" element={<MentionsLegales/>} />
-				</Routes>
-			</main>
-			<Footer/>
-		</BrowserRouter>
-	);
+  return (
+    <BrowserRouter>
+      <Navbar />
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/mentions-legales" element={<MentionsLegales />} />
+        </Routes>
+      </main>
+      <Footer />
+    </BrowserRouter>
+  );
 }

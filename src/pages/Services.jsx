@@ -7,26 +7,26 @@ export default function Services() {
   return (
     <>
       <img
-      src={banner}
-      alt="Bannière bleue abstraite pour la page Services"
-      className="w-100"/>
+        src={banner}
+        alt="Bannière bleue abstraite pour la page Services"
+        className="w-100"
+      />
 
-      <Container aria-labelledby="services-title">
+      <section aria-labelledby="services-title">
+        <Container>
+          <h1 id="services-title" className="visually-hidden">
+            Mes services
+          </h1>
 
-        <h1
-        id="services-title"
-        className="visually-hidden">
-          Section Services du portfolio
-        </h1>
+          <SectionDivider
+            title="Mon offre de services"
+            paragraph="Voici les prestations sur lesquelles je peux intervenir"
+            variant="centered"
+          />
 
-        <SectionDivider
-        title="Mon offre de services"
-        paragraph="Voici les prestations sur lesquelles je peux intervenir"
-        variant="centered"
-        />
-
-        <CardService/>
-      </Container>
+          <CardService />
+        </Container>
+      </section>
     </>
-  )
+  );
 }

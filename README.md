@@ -30,6 +30,7 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
   - [Issue #7 – Contact (Formulaire + Coordonnées + Google Map)](#issue-7---contact-formulaire--coordonnées--google-map)
   - [Issue #8 – Mentions légales (Accordéon)](#issue-8---mentions-legales-accordeon)
   - [Issue #9 – Modale GitHub API](#issue-9---modale-github-api)
+  - [Issue #17 - Correctifs globaux et vérification](#issue-17---correctifs-globaux-et-verification)
 
 ---
 
@@ -282,3 +283,21 @@ Le projet fera l’objet :
   - Intégration de la mise à jour de l'issue #8 dans le sommaire
 
 *Mise à jour - 18 novembre 2025*
+
+### Issue #17 - Correctifs globaux et vérification
+- Refonte sémantique de l'ensemble du projet
+  - vérification et correction des balises
+  - titres hiérarchisés
+  - titres visibles/masqués pour l'accessibilité
+  - gestion des rôles sur les balises nécessaires
+- Accessibilité (A11y)
+  - ajout d'`aria-label`, `aria-labelledby`, `aria-hidden`, `aria-describedby`
+  - labels accessible pour les inputs
+  - structure de formulaire + refactorisation :
+    - création des composants `<FormInput />` et `<FormTextarea />` réutilisables
+- Progress bars
+  - ajout du rôle obligatoire
+  - ajout des attributs aria (`aria-value`, `aria-valuemin`, ...)
+- Indentation de l'ensemble des codes
+
+*Mise à jour - 19 novembre 2025*
