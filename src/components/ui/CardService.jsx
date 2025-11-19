@@ -5,9 +5,9 @@ export default function CardService() {
         <div className="card card-hover">
           <div className="card-content text-center p-3">
             <i
-            className="bi bi-brush fs-1 text-primary d-block m-4"
-            aria-hidden="true">
-            </i>
+              className="bi bi-brush fs-1 text-primary d-block m-4"
+              aria-hidden="true"
+            ></i>
             <h3 className="card-title fw-bold">UX Design</h3>
             <p className="card-text">
               L'UX Design est une discipline qui consiste à concevoir des
@@ -23,9 +23,9 @@ export default function CardService() {
         <div className="card card-hover">
           <div className="card-content text-center p-3">
             <i
-            className="bi bi-code-slash fs-1 text-primary d-block m-4"
-            aria-hidden="true">
-            </i>
+              className="bi bi-code-slash fs-1 text-primary d-block m-4"
+              aria-hidden="true"
+            ></i>
             <h3 className="card-title fw-bold">Développement web</h3>
             <p className="card-text">
               Le développement de sites web consiste à créer des sites internet
@@ -39,9 +39,9 @@ export default function CardService() {
         <div className="card card-hover">
           <div className="card-content text-center p-3">
             <i
-            className="bi bi-search fs-1 text-primary d-block m-4"
-            aria-hidden="true">
-            </i>
+              className="bi bi-search fs-1 text-primary d-block m-4"
+              aria-hidden="true"
+            ></i>
             <h3 className="card-title fw-bold">Référencement</h3>
             <p className="card-text">
               Le référencement naturel (SEO) est une technique qui consiste à

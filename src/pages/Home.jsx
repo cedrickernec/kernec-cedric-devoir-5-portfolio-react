@@ -5,8 +5,8 @@ import "../styles/home.css";
 export default function Home() {
   return (
     <>
-      <Hero/>
-      <AboutAndSkills/>
+      <Hero />
+      <AboutAndSkills />
     </>
-  )
+  );
 }

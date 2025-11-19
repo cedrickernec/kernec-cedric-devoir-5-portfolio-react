@@ -3,36 +3,40 @@ import { githubFields } from "../../data/modalGithubData";
 import ModalGitHubItem from "./ModalGitHubItem";
 
 export default function ModalGitHub() {
-
   const [githubData, setGithubData] = useState(null);
 
   const getGithubProfil = async () => {
-      const res = await fetch("https://api.github.com/users/github-john-doe");
-      const json = await res.json();
-      setGithubData(json);
-      console.log(json);
-  }
+    const res = await fetch("https://api.github.com/users/github-john-doe");
+    const json = await res.json();
+    setGithubData(json);
+    console.log(json);
+  };
 
   useEffect(() => {
     getGithubProfil();
-  }, [])
+  }, []);
 
   return (
     <div
       className="modal modal-lg"
       id="githubModal"
       tabIndex="-1"
+      role="dialog"
+      aria-modal="true"
       aria-labelledby="githubModalLabel"
+      aria-describedby="githubModalDesc"
       aria-hidden="true"
     >
       <div className="modal-dialog modal-dialog-centered">
         <div className="modal-content bg-dark border-secondary text-white shadow-lg">
-
           {/* HEADER */}
           <div className="modal-header border-secondary">
             <h5 className="modal-title" id="githubModalLabel">
               Mon profil GitHub
             </h5>
+            <p id="githubModalDesc" className="visually-hidden">
+              Information du profil GitHub
+            </p>
             <button
               type="button"
               className="btn-close btn-close-white"
@@ -43,15 +47,22 @@ export default function ModalGitHub() {
 
           {/* BODY */}
           <div className="modal-body text-center">
-            {!githubData && <p className="text-center">En cours de chargement...</p>}
+            {!githubData && (
+              <p className="text-center" role="status" aria-live="polite">
+                En cours de chargement...
+              </p>
+            )}
             {githubData && (
               <div className="row p-3 g-4">
-
                 {/* AVATAR */}
                 <div className="col-avatar col-12 col-md-6">
                   <img
-                  src={githubData.avatar_url}
-                  alt="Avatar GitHub"
+                    src={githubData.avatar_url}
+                    alt={
+                      githubData.name
+                        ? `Avatar GitHub de ${githubData.name}`
+                        : "Avatar Github de l'utilisateur"
+                    }
                   />
                 </div>
 
@@ -62,14 +73,14 @@ export default function ModalGitHub() {
 
                     return (
                       <ModalGitHubItem
-                      key={index}
-                      icon={field.icon}
-                      label={field.label}
-                      value={value}
-                      type={field.type}
-                      href={field.hrefKey ? githubData[field.hrefKey] : null}
+                        key={index}
+                        icon={field.icon}
+                        label={field.label}
+                        value={value}
+                        type={field.type}
+                        href={field.hrefKey ? githubData[field.hrefKey] : null}
                       />
-                    )
+                    );
                   })}
                 </div>
               </div>
@@ -81,6 +92,7 @@ export default function ModalGitHub() {
               type="button"
               className="btn btn-secondary rounded-3 px-4"
               data-bs-dismiss="modal"
+              aria-label="Fermer la fenêtre"
             >
               Fermer
             </button>

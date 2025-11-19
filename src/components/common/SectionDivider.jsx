@@ -25,7 +25,7 @@ export default function SectionDivider({
         <p>{paragraph}</p>)}
 
       <div
-      className={`divider-line bg-primary mt-4 ${isCentered ? "mx-auto" : ""}`}
+      className={`divider-line bg-primary ${isCentered ? "mt-4 mx-auto" : ""}`}
       style={DividerStyle}
       aria-hidden="true">
       </div>

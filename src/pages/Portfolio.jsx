@@ -8,25 +8,26 @@ export default function Portfolio() {
   return (
     <div id="portfolio-page">
       <img
-      src={banner}
-      alt="Bannière bleue abstraite pour la page Portfolio"
-      className="w-100"/>
+        src={banner}
+        alt="Bannière bleue abstraite pour la page Portfolio"
+        className="w-100"
+      />
 
-      <Container aria-labelledby="portfolio-title">
+      <section aria-labelledby="portfolio-title">
+        <Container>
+          <h1 id="portfolio-title" className="visually-hidden">
+            Mon portfolio et mes projets
+          </h1>
 
-        <h1
-        id="portfolio-title"
-        className="visually-hidden">
-          Section Portfolio du site
-        </h1>
+          <SectionDivider
+            title="Portfolio"
+            paragraph="Voici quelques-unes de mes réalisations"
+            variant="centered"
+          />
 
-        <SectionDivider
-        title="Portfolio"
-        paragraph="Voici quelques-unes de mes réalisations"
-        variant="centered"/>
-
-        <CardPorfolio/>
-      </Container>
+          <CardPorfolio />
+        </Container>
+      </section>
     </div>
-  )
+  );
 }

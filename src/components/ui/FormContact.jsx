@@ -1,7 +1,8 @@
 import { useState } from "react";
+import FormInput from "./FormInput";
+import FormTextarea from "./FormTextarea";
 
 export default function FormContact() {
-
   //=================================================
   // STATES & ERRORS
   //=================================================
@@ -17,7 +18,7 @@ export default function FormContact() {
   const [errors, setErrors] = useState({});
 
   // State de validation du formulaire
-  const [success, setSuccess] = useState("");
+  const [success, setSuccess] = useState(null);
 
   //=================================================
   // DICTIONARIES : DATA
@@ -28,7 +29,7 @@ export default function FormContact() {
     name: "Nom requis",
     email: "Adresse email requise",
     tel: "Numéro de téléphone requis",
-    sujet: "Sujet requis",
+    subject: "Sujet requis",
     message: "Message requis",
   };
 
@@ -82,7 +83,7 @@ export default function FormContact() {
     if (!name.trim()) newErrors.name = errorMessages.name;
     if (!email.trim()) newErrors.email = errorMessages.email;
     if (!tel.trim()) newErrors.tel = errorMessages.tel;
-    if (!subject.trim()) newErrors.sujet = errorMessages.sujet;
+    if (!subject.trim()) newErrors.subject = errorMessages.subject;
     if (!message.trim()) newErrors.message = errorMessages.message;
 
     setErrors(newErrors);
@@ -116,112 +117,72 @@ export default function FormContact() {
 
   return (
     <form className="d-flex flex-column gap-2" onSubmit={handleSubmit}>
-      
       {/* Nom */}
-      <div>
-        <label htmlFor="name" className="form-label visually-hidden">
-          Nom
-        </label>
-        <input
-          type="text"
-          id="name"
-          className={`form-control ${errors.name ? "is-invalid" : ""}`}
-          value={name}
-          onChange={handleChange}
-          onBlur={validateField}
-          placeholder="Votre nom"
-        />
-        {errors.name && (
-          <div className="invalid-feedback">{errors.name}</div>
-        )}
-      </div>
+      <FormInput
+        id="name"
+        type="text"
+        label="Nom"
+        value={name}
+        error={errors.name}
+        onChange={handleChange}
+        onBlur={validateField}
+        placeholder="Votre nom"
+      />
 
       {/* Email */}
-      <div>
-        <label htmlFor="email" className="form-label visually-hidden">
-          Email
-        </label>
-        <input
-          type="email"
-          id="email"
-          className={`form-control ${errors.email ? "is-invalid" : ""}`}
-          value={email}
-          onChange={handleChange}
-          onBlur={validateField}
-          placeholder="Votre adresse email"
-        />
-        {errors.email && (
-          <div className="invalid-feedback">{errors.email}</div>
-        )}
-      </div>
+      <FormInput
+        id="email"
+        type="email"
+        label="Email"
+        value={email}
+        error={errors.email}
+        onChange={handleChange}
+        onBlur={validateField}
+        placeholder="Votre adresse email"
+      />
 
       {/* Téléphone */}
-      <div>
-        <label htmlFor="tel" className="form-label visually-hidden">
-          Téléphone
-        </label>
-        <input
-          type="tel"
-          id="tel"
-          className={`form-control ${errors.tel ? "is-invalid" : ""}`}
-          value={tel}
-          onChange={handleChange}
-          onBlur={validateField}
-          placeholder="Votre numéro de téléphone"
-        />
-        {errors.tel && (
-          <div className="invalid-feedback">{errors.tel}</div>
-        )}
-      </div>
+      <FormInput
+        id="tel"
+        type="tel"
+        label="Téléphone"
+        value={tel}
+        error={errors.tel}
+        onChange={handleChange}
+        onBlur={validateField}
+        placeholder="Votre numéro de téléphone"
+      />
 
       {/* Sujet */}
-      <div>
-        <label htmlFor="sujet" className="form-label visually-hidden">
-          Sujet
-        </label>
-        <input
-          type="text"
-          id="sujet"
-          className={`form-control ${errors.sujet ? "is-invalid" : ""}`}
-          value={subject}
-          onChange={handleChange}
-          onBlur={validateField}
-          placeholder="Sujet"
-        />
-        {errors.sujet && (
-          <div className="invalid-feedback">{errors.sujet}</div>
-        )}
-      </div>
+      <FormInput
+        id="subject"
+        type="text"
+        label="Sujet"
+        value={subject}
+        error={errors.subject}
+        onChange={handleChange}
+        onBlur={validateField}
+        placeholder="Sujet"
+      />
 
       {/* Message */}
-      <div>
-        <label htmlFor="message" className="form-label visually-hidden">
-          Message
-        </label>
-        <textarea
-          id="message"
-          className={`form-control ${errors.message ? "is-invalid" : ""}`}
-          value={message}
-          onChange={handleChange}
-          onBlur={validateField}
-          placeholder="Votre message"
-          rows={11}
-        />
-        {errors.message && (
-          <div className="invalid-feedback">{errors.message}</div>
-        )}
-      </div>
+      <FormTextarea
+        id="message"
+        label="Message"
+        value={message}
+        error={errors.message}
+        onChange={handleChange}
+        onBlur={validateField}
+        placeholder="Votre message"
+        rows={11}
+      />
 
       {/* Bouton de soumission + message success */}
       <div className="d-flex justify-content-center mt-2">
         <div className="d-flex align-items-center gap-3">
-          <button className="btn btn-primary">
-            Envoyer
-          </button>
+          <button className="btn btn-primary">Envoyer</button>
 
-          {success && (
-            <span className="text-success">{success}</span>
-          )}
+          {success && <span className="text-success">{success}</span>}
         </div>
       </div>
     </form>

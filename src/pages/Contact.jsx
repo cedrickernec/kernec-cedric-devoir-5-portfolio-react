@@ -6,10 +6,10 @@ import "../styles/contact.css";
 
 export default function Contacts() {
   return (
-    <section>
+    <section aria-labelledby="contact-title">
       <Container>
         <h1 id="contact-title" className="visually-hidden">
-          Section Contact du site
+          Contact
         </h1>
 
         <SectionDivider
@@ -22,16 +22,16 @@ export default function Contacts() {
         <div className="card shadow p-4">
           <div className="row contact-row">
             {/*Colonne gauche*/}
-            <section className="col-md-6">
+            <div className="col-md-6">
               <SectionDivider level="h3" title="Formulaire de contact" />
               <FormContact/>
-            </section>
+            </div>
 
             {/*Colonne droite*/}
-            <section className="column-right col-md-6 mt-4 mt-md-0">
+            <div className="column-right col-md-6 mt-4 mt-md-0">
               <SectionDivider level="h3" title="Mes coordonnées" />
               <ContactInfo/>
-            </section>
+            </div>
           </div>
         </div>
       </Container>

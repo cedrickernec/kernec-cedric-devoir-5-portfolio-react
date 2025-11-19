@@ -38,3 +38,14 @@
 .github-item-icon {
     float: left;
 }
+
+/* ==========================================
+   ABOUT AND SKILLS SECTION
+============================================= */
+
+.skill-title,
+.skill-value {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
