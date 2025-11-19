@@ -10,11 +10,13 @@ export default function Footer() {
         <div className="row text-start">
           {/* Colonne 1 */}
           <div className="col-md-4">
-            <h5 className="mb-2">John Doe</h5>
-            <p>40 rue Laure Diebold</p>
-            <p>60009 Lyon, France</p>
-            <p>10 20 30 40 50</p>
-            <p>john.doe@gmail.com</p>
+            <address>
+              <h5 className="mb-2">John Doe</h5>
+              <p>40 rue Laure Diebold</p>
+              <p>60009 Lyon, France</p>
+              <p>10 20 30 40 50</p>
+              <p>john.doe@gmail.com</p>
+            </address>
             <div className="mt-3">
               <a
                 href="https://github.com/"
