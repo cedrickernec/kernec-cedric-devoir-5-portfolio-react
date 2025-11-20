@@ -18,7 +18,7 @@ export default function ModalGitHub() {
 
   return (
     <div
-      className="modal modal-lg"
+      className="modal fade modal-lg"
       id="githubModal"
       tabIndex="-1"
       role="dialog"

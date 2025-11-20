@@ -2,7 +2,7 @@ export default function CardService() {
   return (
     <div className="row row-cols-1 row-cols-md-3 g-3 align-items-stretch">
       <div className="col d-flex">
-        <div className="card card-hover">
+        <div className="card card-services card-hover">
           <div className="card-content text-center p-3">
             <i
               className="bi bi-brush fs-1 text-primary d-block m-4"
@@ -20,7 +20,7 @@ export default function CardService() {
         </div>
       </div>
       <div className="col d-flex">
-        <div className="card card-hover">
+        <div className="card card-services card-hover">
           <div className="card-content text-center p-3">
             <i
               className="bi bi-code-slash fs-1 text-primary d-block m-4"
@@ -36,7 +36,7 @@ export default function CardService() {
         </div>
       </div>
       <div className="col d-flex">
-        <div className="card card-hover">
+        <div className="card card-services card-hover">
           <div className="card-content text-center p-3">
             <i
               className="bi bi-search fs-1 text-primary d-block m-4"

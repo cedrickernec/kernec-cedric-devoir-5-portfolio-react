@@ -31,6 +31,7 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
   - [Issue #8 – Mentions légales (Accordéon)](#issue-8---mentions-legales-accordeon)
   - [Issue #9 – Modale GitHub API](#issue-9---modale-github-api)
   - [Issue #17 - Correctifs globaux et vérification](#issue-17---correctifs-globaux-et-verification)
+  - [Issue #22 - Transitions CSS](#issue-22---transition-css)
 
 ---
 
@@ -301,3 +302,14 @@ Le projet fera l’objet :
 - Indentation de l'ensemble des codes
 
 *Mise à jour - 19 novembre 2025*
+
+### Issue #22 - Transitions CSS
+- Application des transitions globales sur les élements interactifs
+- Transfert des imports CSS (`home.css`, `portfolio.css`, `contact.css`) vers `global.css` afin d'éviter les conflits
+- Application de transition sur des élements interactifs plus spécifiques :
+  - cards
+  - icons
+  - modal
+  - nav-link
+
+*Mise à jour - 20 novembre 2025
