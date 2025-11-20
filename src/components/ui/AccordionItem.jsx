@@ -7,7 +7,7 @@ export default function AccordionItem({
 }) {
   return (
     <div className="accordion-item">
-      <h3 className="accordion-header">
+      <h3 id={`${id}-header`} className="accordion-header">
         <button
           className={`accordion-button ${defaultOpen ? "" : "collapsed"}`}
           type="button"
@@ -15,6 +15,7 @@ export default function AccordionItem({
           data-bs-target={`#${id}`}
           aria-expanded={defaultOpen}
           aria-controls={id}
+          aria-labelledby={`${id}-header`}
         >
           {title}
         </button>

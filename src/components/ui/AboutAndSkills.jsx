@@ -40,91 +40,113 @@ export default function AboutAndSkills() {
                 title="Mes compétences"
                 variant="default"
               />
-              <div className="d-flex align-items-center gap-1">
-                <h4 className="skill-title">HTML5</h4>
-                <p id="skill-html" className="skill-value">
-                  90%
-                </p>
-              </div>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-danger"
-                  role="progressbar"
-                  style={{ width: "90%" }}
-                  aria-valuenow={90}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-describedby="skill-html"
-                ></div>
-              </div>
-              <div className="d-flex align-items-center gap-1">
-                <h4 className="skill-title">CSS</h4>
-                <p id="skill-css" className="skill-value">
-                  80%
-                </p>
-              </div>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-info"
-                  role="progressbar"
-                  style={{ width: "80%" }}
-                  aria-valuenow={80}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-describedby="skill-css"
-                ></div>
-              </div>
-              <div className="d-flex align-items-center gap-1">
-                <h4 className="skill-title">JAVASCRIPT</h4>
-                <p id="skill-js" className="skill-value">
-                  70%
-                </p>
-              </div>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-warning"
-                  role="progressbar"
-                  style={{ width: "70%" }}
-                  aria-valuenow={70}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-describedby="skill-js"
-                ></div>
-              </div>
-              <div className="d-flex align-items-center gap-1">
-                <h4 className="skill-title">PHP</h4>
-                <p id="skill-php" className="skill-value">
-                  60%
-                </p>
-              </div>
-              <div className="progress mb-3">
-                <div
-                  className="progress-bar bg-success"
-                  role="progressbar"
-                  style={{ width: "60%" }}
-                  aria-valuenow={60}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-describedby="skill-php"
-                ></div>
-              </div>
-              <div className="d-flex align-items-center gap-1">
-                <h4 className="skill-title">REACT</h4>
-                <p id="skill-react" className="skill-value">
-                  50%
-                </p>
-              </div>
-              <div className="progress">
-                <div
-                  className="progress-bar bg-primary"
-                  role="progressbar"
-                  style={{ width: "50%" }}
-                  aria-valuenow={50}
-                  aria-valuemin={0}
-                  aria-valuemax={100}
-                  aria-describedby="skill-react"
-                ></div>
-              </div>
+
+              <ul className="list-unstyled">
+                {/* HTML */}
+                <li>
+                  <div className="d-flex align-items-center gap-1">
+                    <h4 className="skill-title">HTML5</h4>
+                    <p id="skill-html" className="skill-value">
+                      90%
+                    </p>
+                  </div>
+                  <div className="progress mb-3">
+                    <div
+                      className="progress-bar bg-danger"
+                      role="progressbar"
+                      style={{ width: "90%" }}
+                      aria-valuenow={90}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-describedby="skill-html"
+                    ></div>
+                  </div>
+                </li>
+
+                {/* CSS */}
+                <li>
+                  <div className="d-flex align-items-center gap-1">
+                    <h4 className="skill-title">CSS</h4>
+                    <p id="skill-css" className="skill-value">
+                      80%
+                    </p>
+                  </div>
+                  <div className="progress mb-3">
+                    <div
+                      className="progress-bar bg-info"
+                      role="progressbar"
+                      style={{ width: "80%" }}
+                      aria-valuenow={80}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-describedby="skill-css"
+                    ></div>
+                  </div>
+                </li>
+
+                {/* JAVASCRIPT */}
+                <li>
+                  <div className="d-flex align-items-center gap-1">
+                    <h4 className="skill-title">JavaScript</h4>
+                    <p id="skill-js" className="skill-value">
+                      70%
+                    </p>
+                  </div>
+                  <div className="progress mb-3">
+                    <div
+                      className="progress-bar bg-warning"
+                      role="progressbar"
+                      style={{ width: "70%" }}
+                      aria-valuenow={70}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-describedby="skill-js"
+                    ></div>
+                  </div>
+                </li>
+
+                {/* PHP */}
+                <li>
+                  <div className="d-flex align-items-center gap-1">
+                    <h4 className="skill-title">PHP</h4>
+                    <p id="skill-php" className="skill-value">
+                      60%
+                    </p>
+                  </div>
+                  <div className="progress mb-3">
+                    <div
+                      className="progress-bar bg-success"
+                      role="progressbar"
+                      style={{ width: "60%" }}
+                      aria-valuenow={60}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-describedby="skill-php"
+                    ></div>
+                  </div>
+                </li>
+
+                {/* REACT */}
+                <li>
+                  <div className="d-flex align-items-center gap-1">
+                    <h4 className="skill-title">React</h4>
+                    <p id="skill-react" className="skill-value">
+                      50%
+                    </p>
+                  </div>
+                  <div className="progress">
+                    <div
+                      className="progress-bar bg-primary"
+                      role="progressbar"
+                      style={{ width: "50%" }}
+                      aria-valuenow={50}
+                      aria-valuemin={0}
+                      aria-valuemax={100}
+                      aria-describedby="skill-react"
+                    ></div>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

@@ -9,12 +9,13 @@ export default function CardPortfolio() {
             <img
               src={project.image}
               className="card-img-top"
-              alt={`Aperçu du proejt ${project.title}`}
+              alt={`Aperçu du projet ${project.title}`}
             />
 
             <div className="card-body">
               <h3 className="card-title fw-bold">{project.title}</h3>
               <p className="card-text">{project.description}</p>
+              {project.link && (
               <a
                 href={project.link}
                 className="btn btn-primary"
@@ -23,6 +24,7 @@ export default function CardPortfolio() {
               >
                 Voir le site
               </a>
+              )}
             </div>
 
             <div className="card-footer">

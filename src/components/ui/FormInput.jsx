@@ -24,6 +24,7 @@ export default function FormInput({
         className={`form-control ${error ? "is-invalid" : ""}`}
         aria-invalid={error ? "true" : "false"}
         aria-describedby={error ? `${id}-error` : undefined}
+        aria-required="true"
       />
 
       {error && (

@@ -24,6 +24,7 @@ export default function FormTextarea({
         rows={rows}
         aria-invalid={error ? "true" : "false"}
         aria-describedby={error ? `${id}-error` : undefined}
+        aria-required="true"
       />
 
       {error && (

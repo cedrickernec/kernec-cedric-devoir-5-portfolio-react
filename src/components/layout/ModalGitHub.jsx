@@ -34,9 +34,6 @@ export default function ModalGitHub() {
             <h5 className="modal-title" id="githubModalLabel">
               Mon profil GitHub
             </h5>
-            <p id="githubModalDesc" className="visually-hidden">
-              Information du profil GitHub
-            </p>
             <button
               type="button"
               className="btn-close btn-close-white"
@@ -44,6 +41,9 @@ export default function ModalGitHub() {
               aria-label="Fermer"
             ></button>
           </div>
+          <p id="githubModalDesc" className="visually-hidden">
+            Information du profil GitHub
+          </p>
 
           {/* BODY */}
           <div className="modal-body text-center">

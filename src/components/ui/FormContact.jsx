@@ -38,7 +38,7 @@ export default function FormContact() {
     name: setName,
     email: setEmail,
     tel: setTel,
-    sujet: setSubject,
+    subject: setSubject,
     message: setMessage,
   };
 
@@ -57,6 +57,8 @@ export default function FormContact() {
     if (errors[field]) {
       setErrors((prev) => ({ ...prev, [field]: null }));
     }
+
+    if (success) setSuccess(null);
   };
 
   //=================================================
@@ -116,7 +118,11 @@ export default function FormContact() {
   //=================================================
 
   return (
-    <form className="d-flex flex-column gap-2" onSubmit={handleSubmit}>
+    <form
+      noValidate
+      className="d-flex flex-column gap-2"
+      onSubmit={handleSubmit}
+    >
       {/* Nom */}
       <FormInput
         id="name"
@@ -180,7 +186,9 @@ export default function FormContact() {
       {/* Bouton de soumission + message success */}
       <div className="d-flex justify-content-center mt-2">
         <div className="d-flex align-items-center gap-3">
-          <button className="btn btn-primary">Envoyer</button>
+          <button type="submit" className="btn btn-primary">
+            Envoyer
+          </button>
 
           {success && <span className="text-success">{success}</span>}
         </div>

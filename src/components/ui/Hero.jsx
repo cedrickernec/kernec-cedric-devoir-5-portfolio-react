@@ -8,7 +8,7 @@ export default function Hero() {
         className="hero d-flex align-items-center justify-content-center"
         aria-labelledby="hero-title"
       >
-        <div className="hero-overlay"></div>
+        <div className="hero-overlay" aria-hidden="true"></div>
         <div className="hero-content text-center text-white px-3">
           <h1 id="hero-title" className="display-5 fw-bold mb-3">
             Bonjour, je suis John Doe
