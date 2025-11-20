@@ -28,7 +28,10 @@ export default function CardPortfolio() {
             </div>
 
             <div className="card-footer">
-              <small className="text-body-secondary">{project.footer}</small>
+              <small className="text-body-secondary">
+                <span>{project.footer.label}</span>
+                <span className="tech-uppercase">{" "}{project.footer.tech}</span>
+              </small>
             </div>
           </div>
         </div>

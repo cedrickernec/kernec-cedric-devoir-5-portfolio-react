@@ -5,3 +5,7 @@
 #portfolio-page .btn-primary:hover {
     filter: brightness(150%);
 }
+
+.tech-uppercase {
+    text-transform: uppercase;
+}
