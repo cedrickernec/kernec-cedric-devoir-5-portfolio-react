@@ -32,7 +32,7 @@ export default function Footer() {
                 href="https://x.com/"
                 className="text-secondary me-3"
                 target="_blank"
-                rel="noopenner noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Lien vers le profil Twitter"
                 title="Twitter"
               >
