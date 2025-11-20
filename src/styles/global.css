@@ -1,4 +1,7 @@
 @import './reset.css';
+@import "./home.css";
+@import "./portfolio.css";
+@import "./contact.css";
 
 /* ==========================================
    GLOBAL STYLES
@@ -40,15 +43,16 @@ strong {
 /* Navbar */
 .nav-link {
   text-transform: uppercase;
-}
-
-.nav-link:hover {
   text-decoration: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
 }
 
+.nav-link:hover,
 .nav-link.active {
-  text-decoration: underline;
-  font-weight: 700;
+  text-decoration-color: currentColor;
+  text-underline-offset: 3px;
 }
 
 .nav-link.pending {
@@ -60,12 +64,11 @@ strong {
 }
 
 /* Footer */
-
 footer * {
   margin: 0.1rem 0;
 }
 
-.bi:hover {
+footer .bi:hover {
   color: white;
 }
 
@@ -82,4 +85,28 @@ footer a:hover {
 .card-hover:hover {
     background-color: #efefef;
     box-shadow: var(--bs-box-shadow-sm);
+}
+
+/* Transitions globales */
+button,
+.btn:hover,
+a,
+a i,
+.card,
+img {
+  transition: all 0.20s ease-in-out;
+}
+
+/* Transitions spécifiques */
+.nav-link {
+  transition:
+    text-decoration-color 0.35s cubic-bezier(0.3, 0, 0.7, 1),
+    text-underline-offset 0.35s cubic-bezier(0.3, 0, 0.7, 1),
+    color 0.25s ease-in-out;
+}
+
+.card-services:hover,
+.card-portfolio:hover,
+footer a i:hover {
+    transform: scale(1.02);
 }

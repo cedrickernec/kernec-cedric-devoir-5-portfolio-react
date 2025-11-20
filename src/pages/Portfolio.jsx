@@ -2,7 +2,6 @@ import banner from "../assets/images/banner.jpg";
 import Container from "../components/common/Container";
 import SectionDivider from "../components/common/SectionDivider";
 import CardPorfolio from "../components/ui/CardPortfolio";
-import "../styles/portfolio.css";
 
 export default function Portfolio() {
   return (

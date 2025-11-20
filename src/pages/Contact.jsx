@@ -2,7 +2,6 @@ import Container from "../components/common/Container";
 import SectionDivider from "../components/common/SectionDivider";
 import FormContact from "../components/ui/FormContact";
 import ContactInfo from "../components/ui/ContactInfo";
-import "../styles/contact.css";
 
 export default function Contacts() {
   return (

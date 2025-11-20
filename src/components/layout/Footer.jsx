@@ -26,7 +26,7 @@ export default function Footer() {
                 aria-label="Lien vers le profil GitHub"
                 title="GitHub"
               >
-                <i className="bi bi-github fs-4" aria-hidden="true"></i>
+                <i className="bi bi-github d-inline-block my-0 fs-4" aria-hidden="true"></i>
               </a>
               <a
                 href="https://x.com/"
@@ -36,7 +36,7 @@ export default function Footer() {
                 aria-label="Lien vers le profil Twitter"
                 title="Twitter"
               >
-                <i className="bi bi-twitter fs-4" aria-hidden="true"></i>
+                <i className="bi bi-twitter d-inline-block my-0 fs-4" aria-hidden="true"></i>
               </a>
               <a
                 href="https://linkedin.com/"
@@ -46,7 +46,7 @@ export default function Footer() {
                 aria-label="Lien vers le profil LinkedIn"
                 title="LinkedIn"
               >
-                <i className="bi bi-linkedin fs-4" aria-hidden="true"></i>
+                <i className="bi bi-linkedin d-inline-block my-0 fs-4" aria-hidden="true"></i>
               </a>
             </div>
           </div>

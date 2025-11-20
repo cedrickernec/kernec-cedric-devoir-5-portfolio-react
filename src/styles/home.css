@@ -49,3 +49,25 @@
     font-weight: 400;
     margin: 0;
 }
+
+/* ==========================================
+   TRANSITIONS
+============================================= */
+
+/* Transition de la modale */
+
+.modal.fade .modal-dialog {
+    transform: translateY(120px) scale(0.92);
+    opacity: 0;
+    filter: blur(6px);
+    transition: 
+        transform 0.5s cubic-bezier(0.1, 1.25, 0.25, 1),
+        opacity 0.35s cubic-bezier(0.25, 1.25, 0.25, 1),
+        filter 0.5s cubic-bezier(0.1, 1.25, 0.25, 1);
+}
+
+.modal.fade.show .modal-dialog {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    filter: blur(0);
+}

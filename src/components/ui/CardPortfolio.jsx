@@ -5,7 +5,7 @@ export default function CardPorfolio() {
     <div className="row row-cols-1 row-cols-md-3 g-3">
       {portfolioProjects.map((project) => (
         <div className="col" key={project.id}>
-          <div className="card h-100 text-center card-hover">
+          <div className="card card-portfolio h-100 text-center card-hover">
             <img
               src={project.image}
               className="card-img-top"
