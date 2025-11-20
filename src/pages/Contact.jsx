@@ -3,7 +3,7 @@ import SectionDivider from "../components/common/SectionDivider";
 import FormContact from "../components/ui/FormContact";
 import ContactInfo from "../components/ui/ContactInfo";
 
-export default function Contacts() {
+export default function Contact() {
   return (
     <section aria-labelledby="contact-title">
       <Container>

@@ -16,7 +16,7 @@ export default function MentionsLegales() {
       <section aria-labelledby="mentions-legales-title">
         <Container>
           <h1 id="mentions-legales-title" className="visually-hidden">
-            Section Mentions légales du site
+            Mentions légales du site
           </h1>
           <SectionDivider title="Mentions légales" variant="centered" />
 

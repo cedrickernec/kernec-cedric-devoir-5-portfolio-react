@@ -8,7 +8,7 @@ export default function Services() {
     <>
       <img
         src={banner}
-        alt="Bannière bleue abstraite pour la page Services"
+        alt="Bannière bleue abstraite"
         className="w-100"
       />
 

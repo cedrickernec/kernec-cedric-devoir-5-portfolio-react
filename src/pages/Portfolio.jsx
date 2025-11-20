@@ -1,14 +1,14 @@
 import banner from "../assets/images/banner.jpg";
 import Container from "../components/common/Container";
 import SectionDivider from "../components/common/SectionDivider";
-import CardPorfolio from "../components/ui/CardPortfolio";
+import CardPortfolio from "../components/ui/CardPortfolio";
 
 export default function Portfolio() {
   return (
     <div id="portfolio-page">
       <img
         src={banner}
-        alt="Bannière bleue abstraite pour la page Portfolio"
+        alt="Bannière bleue abstraite"
         className="w-100"
       />
 
@@ -24,7 +24,7 @@ export default function Portfolio() {
             variant="centered"
           />
 
-          <CardPorfolio />
+          <CardPortfolio />
         </Container>
       </section>
     </div>
