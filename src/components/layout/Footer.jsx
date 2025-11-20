@@ -1,6 +1,7 @@
 // Footer commun avec navigation React Router + Bootstrap
 import { NavLink } from "react-router-dom";
 import Container from "../common/Container";
+import { portfolioProjects } from "../../data/projects";
 
 export default function Footer() {
   return (
@@ -77,24 +78,13 @@ export default function Footer() {
           <div className="mt-2 col-md-4 mt-md-0">
             <h5 className="mb-2">Mes dernières réalisations</h5>
             <ul className="list-unstyled">
-              <li>
-                <NavLink to="/portfolio">Fresh Food</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">Restaurant Akira</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">Espace bien-être</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">SEO</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">Création d'une API</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">Maquette d'un site</NavLink>
-              </li>
+              {portfolioProjects.map((project) => (
+                <li key={project.id}>
+                  <NavLink to="/portfolio">
+                    {project.title}
+                  </NavLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
