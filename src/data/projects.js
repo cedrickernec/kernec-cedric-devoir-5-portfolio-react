@@ -11,7 +11,7 @@ export const portfolioProjects = [
         image: project1,
         title: "Fresh Food",
         description: "Site de vente de produits frais en ligne",
-        link: null,
+        link: "#",
         footer: "Site réalisé avec PHP et MySQL"
     },
     {
@@ -19,7 +19,7 @@ export const portfolioProjects = [
         image: project2,
         title: "Restaurant Akira",
         description: "Site de vente de produits frais en ligne",
-        link: null,
+        link: "#",
         footer: "Site réalisé avec WordPress"
     },
     {
@@ -27,7 +27,7 @@ export const portfolioProjects = [
         image: project3,
         title: "Espace bien-être",
         description: "Site de vente de produits frais en ligne",
-        link: null,
+        link: "#",
         footer: "Site réalisé avec LARAVEL"
     },
     {
@@ -35,7 +35,7 @@ export const portfolioProjects = [
         image: project4,
         title: "SEO",
         description: "Amélioration du référencement d'un site e-commerce",
-        link: null,
+        link: "#",
         footer: "Utilisation des outils SEO"
     },
     {
@@ -43,7 +43,7 @@ export const portfolioProjects = [
         image: project5,
         title: "Création d'une API",
         description: "Création d'une API RESTFULL publique",
-        link: null,
+        link: "#",
         footer: "PHP -SYMFONY"
     },
     {
@@ -51,7 +51,7 @@ export const portfolioProjects = [
         image: project6,
         title: "Maquette d'un site web",
         description: "Création du prototype d'un site",
-        link: null,
+        link: "#",
         footer: "Réalisé avec FIGMA"
     }
 ]

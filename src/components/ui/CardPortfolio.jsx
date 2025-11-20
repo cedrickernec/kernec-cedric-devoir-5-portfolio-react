@@ -16,7 +16,7 @@ export default function CardPorfolio() {
               <h3 className="card-title fw-bold">{project.title}</h3>
               <p className="card-text">{project.description}</p>
               <a
-                href={project.link ? project.link : null}
+                href={project.link}
                 className="btn btn-primary"
                 target="_blank"
                 rel="noopener noreferrer"
