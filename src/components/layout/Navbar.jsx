@@ -1,5 +1,6 @@
 // Navbar principale avec navigation React Router + Bootstrap
 import { NavLink } from "react-router-dom";
+import ScrollLink from "../common/ScrollLink";
 
 export default function Navbar() {
   return (
@@ -8,9 +9,9 @@ export default function Navbar() {
       aria-label="Navigation principale"
     >
       <div className="container-fluid px-3 px-md-4 px-lg-5">
-        <NavLink className="navbar-brand" to="/">
+        <ScrollLink className="navbar-brand" to="/">
           <strong>JOHN DOE</strong>
-        </NavLink>
+        </ScrollLink>
         <button
           className="navbar-toggler"
           type="button"
