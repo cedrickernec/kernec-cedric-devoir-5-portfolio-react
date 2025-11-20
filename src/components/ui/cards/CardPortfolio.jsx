@@ -1,4 +1,4 @@
-import { portfolioProjects } from "../../data/projects";
+import { portfolioProjects } from "../../../data/projects";
 
 export default function CardPortfolio() {
   return (

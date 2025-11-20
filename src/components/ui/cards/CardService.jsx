@@ -1,4 +1,4 @@
-import { services } from "../../data/servicesData";
+import { services } from "../../../data/servicesData";
 
 export default function CardService() {
   return (

@@ -1,7 +1,7 @@
 import banner from "../assets/images/banner.jpg";
 import SectionDivider from "../components/common/SectionDivider";
 import Container from "../components/common/Container";
-import CardService from "../components/ui/CardService";
+import CardService from "../components/ui/cards/CardService";
 
 export default function Services() {
   return (
