@@ -31,13 +31,13 @@ export default function Contact() {
             <div className="row contact-row">
               {/*Colonne gauche*/}
               <div className="col-md-6">
-                <SectionDivider level="h3" title="Formulaire de contact" />
+                <SectionDivider size="h3" title="Formulaire de contact" />
                 <FormContact />
               </div>
 
               {/*Colonne droite*/}
               <div className="column-right col-md-6 mt-4 mt-md-0">
-                <SectionDivider level="h3" title="Mes coordonnées" />
+                <SectionDivider size="h3" title="Mes coordonnées" />
                 <ContactInfo />
               </div>
             </div>

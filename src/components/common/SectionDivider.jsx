@@ -1,10 +1,13 @@
 export default function SectionDivider({
   level = "h2",
+  size = "h2",
   title,
   paragraph,
   variant = "default"}) {
 
   const Heading = level;
+
+  const textSize = size;
 
   const isCentered = variant === "centered";
 
@@ -19,7 +22,9 @@ export default function SectionDivider({
 
   return (
     <div className={containerClasses}>
-      <Heading className="fw-bold">{title}</Heading>
+      <Heading className={`${textSize} fw-bold`}>
+        {title}
+      </Heading>
 
       {paragraph && (
         <p>{paragraph}</p>)}

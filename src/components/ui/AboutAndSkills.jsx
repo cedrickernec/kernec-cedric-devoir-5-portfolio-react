@@ -10,7 +10,11 @@ export default function AboutAndSkills() {
           <div className="row">
             {/* Colonne gauche */}
             <div className="col-md-6">
-              <SectionDivider level="h3" title="À propos" variant="default" />
+              <SectionDivider
+                size="h3"
+                title="À propos"
+                variant="default"
+              />
               <img
                 src={johnDoeAbout}
                 alt="Photo de John Doe au travail"
@@ -36,7 +40,7 @@ export default function AboutAndSkills() {
             {/* Colonne droite */}
             <div className="col-md-6">
               <SectionDivider
-                level="h3"
+                size="h3"
                 title="Mes compétences"
                 variant="default"
               />
@@ -45,7 +49,7 @@ export default function AboutAndSkills() {
                 {/* HTML */}
                 <li>
                   <div className="d-flex align-items-center gap-1">
-                    <h4 className="skill-title">HTML5</h4>
+                    <h3 className="skill-title">HTML5</h3>
                     <p id="skill-html" className="skill-value">
                       90%
                     </p>
@@ -58,7 +62,7 @@ export default function AboutAndSkills() {
                       aria-valuenow={90}
                       aria-valuemin={0}
                       aria-valuemax={100}
-                      aria-describedby="skill-html"
+                      aria-labelledby="skill-html"
                     ></div>
                   </div>
                 </li>
@@ -66,7 +70,7 @@ export default function AboutAndSkills() {
                 {/* CSS */}
                 <li>
                   <div className="d-flex align-items-center gap-1">
-                    <h4 className="skill-title">CSS</h4>
+                    <h3 className="skill-title">CSS</h3>
                     <p id="skill-css" className="skill-value">
                       80%
                     </p>
@@ -79,7 +83,7 @@ export default function AboutAndSkills() {
                       aria-valuenow={80}
                       aria-valuemin={0}
                       aria-valuemax={100}
-                      aria-describedby="skill-css"
+                      aria-labelledby="skill-css"
                     ></div>
                   </div>
                 </li>
@@ -87,7 +91,7 @@ export default function AboutAndSkills() {
                 {/* JAVASCRIPT */}
                 <li>
                   <div className="d-flex align-items-center gap-1">
-                    <h4 className="skill-title">JavaScript</h4>
+                    <h3 className="skill-title">JavaScript</h3>
                     <p id="skill-js" className="skill-value">
                       70%
                     </p>
@@ -100,7 +104,7 @@ export default function AboutAndSkills() {
                       aria-valuenow={70}
                       aria-valuemin={0}
                       aria-valuemax={100}
-                      aria-describedby="skill-js"
+                      aria-labelledby="skill-js"
                     ></div>
                   </div>
                 </li>
@@ -108,7 +112,7 @@ export default function AboutAndSkills() {
                 {/* PHP */}
                 <li>
                   <div className="d-flex align-items-center gap-1">
-                    <h4 className="skill-title">PHP</h4>
+                    <h3 className="skill-title">PHP</h3>
                     <p id="skill-php" className="skill-value">
                       60%
                     </p>
@@ -121,7 +125,7 @@ export default function AboutAndSkills() {
                       aria-valuenow={60}
                       aria-valuemin={0}
                       aria-valuemax={100}
-                      aria-describedby="skill-php"
+                      aria-labelledby="skill-php"
                     ></div>
                   </div>
                 </li>
@@ -129,7 +133,7 @@ export default function AboutAndSkills() {
                 {/* REACT */}
                 <li>
                   <div className="d-flex align-items-center gap-1">
-                    <h4 className="skill-title">React</h4>
+                    <h3 className="skill-title">React</h3>
                     <p id="skill-react" className="skill-value">
                       50%
                     </p>
@@ -142,7 +146,7 @@ export default function AboutAndSkills() {
                       aria-valuenow={50}
                       aria-valuemin={0}
                       aria-valuemax={100}
-                      aria-describedby="skill-react"
+                      aria-labelledby="skill-react"
                     ></div>
                   </div>
                 </li>

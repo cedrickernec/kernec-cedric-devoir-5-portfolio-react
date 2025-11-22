@@ -11,7 +11,7 @@ export default function Hero() {
       >
         <img
           src={heroBg}
-          alt=""
+          alt="John Doe vue de dos qui travaille sur un projet"
           className="hero-bg"
           fetchPriority="high"
           width="1920"
