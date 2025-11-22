@@ -15,7 +15,7 @@ export default function App() {
     <BrowserRouter>
       <ScrollToTop/>
       <Navbar />
-      <main role="main">
+      <main>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
