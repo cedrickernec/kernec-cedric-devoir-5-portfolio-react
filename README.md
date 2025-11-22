@@ -9,33 +9,28 @@
 ![Version](https://img.shields.io/badge/Version-v1.0-blue)
 
 Projet réalisé dans le cadre du **Devoir 5 – Développeur Web & Web Mobile (CEF)**.  
-Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **Bootstrap** et **Vite**.
+Ce projet consiste à créer un **portfolio professionnel** avec **React**, **Bootstrap** et **Vite**.
 
 ---
 
 ## SOMMAIRE
 
-- [Objectifs du projet](#objectifs-du-projet)
-- [Technologies utilisées](#technologies-utilisees)
-- [Installation du projet](#installation-du-projet)
-- [Auteur](#auteur)
-- [Validation finale](#validation-finale)
-- [Historique des mises à jour](#historique-des-mises-à-jour)
-  - [Issue #1 - Initialisation du projet](#issue-1---initialisation-du-projet)
-  - [Issue #2 - Navbar + Routes + Footer](#issue-2---navbar--routes--footer)
-  - [Issue #3 - Footer commun](#issue-3---footer-commun)
-  - [Issue #4 - Home (Hero + About + Skills)](#issue-4---home-hero--about--skills)
-  - [Issue #5 - Services (Card + Titre)](#issue-5---services-card--titre)
-  - [Issue #6 - Portfolio (Cards + Boutons)](#issue-6---portfolio-cards--boutons)
-  - [Issue #7 – Contact (Formulaire + Coordonnées + Google Map)](#issue-7---contact-formulaire--coordonnées--google-map)
-  - [Issue #8 – Mentions légales (Accordéon)](#issue-8---mentions-legales-accordeon)
-  - [Issue #9 – Modale GitHub API](#issue-9---modale-github-api)
-  - [Issue #17 - Correctifs globaux et vérification](#issue-17---correctifs-globaux-et-verification)
-  - [Issue #22 - Transitions CSS](#issue-22---transition-css)
+- [Objectifs du projet](#-objectifs-du-projet)
+- [Fonctionnalités principales](#-fonctionnalites-principales)
+- [Technologies utilisées](#-technologies-utilisees)
+- [Accessibilité (A11y)](#-accessibilite-a11y)
+- [SEO & Performance](#-seo--performance)
+- [Aperçu du projet](#-apercu-du-projet)
+- [Installation et lancement du projet en développement](#-installation-et-lancement-du-projet-en-développement)
+- [Installation de la version buildée et prévisualisation](#-installation-de-la-version-buildée-et-prévisualisation)
+- [Auteur](#-auteur)
+- [Validation finale](#-validation-finale)
+- [Historique des mises à jour](#-historique-des-mises-à-jour)
+- [Livraison du projet](#-livraison-du-projet)
 
 ---
 
-## 🚀 Objectifs du projet
+## 🎯 Objectifs du projet
 
 - Créer une application React fonctionnelle et responsive (mobile / tablette / desktop),
 - Utiliser **React Router** pour la navigation entre les pages :
@@ -45,8 +40,21 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
   - Contact
   - Mentions légales
 - Intégrer une **modale** affichant les informations GitHub via l’API publique,
-- Respecter les standards **W3C** et les bonnes pratiques **SEO**,
+- Intégrer un formulaire de contact et une Iframe Google Map,
+- Respecter les standards **W3C** et les bonnes pratiques **SEO** et **A11y**,
 - Fournir un dépôt GitHub propre et documenté.
+
+---
+
+## 🚀 Fonctionnalités principales
+
+- 5 pages responsive (mobile / tablette / Desktop) : Accueil, Services, Portfolio, Contact, Mentions Légales
+- Navbar et Footer + scroll-to-top sur les liens des pages internes du footer
+- Modale GitHub alimentée par l'API publique
+- Formulaire de contact
+- Composants modulaires et réutilisables
+- Animation CSS (hover, cartes, modale, icônes)
+- Données centralisées (projets, mentions légales, services, modale GitHub)
 
 ---
 
@@ -55,14 +63,430 @@ Ce projet consiste à créer un **portfolio personnel** en **React.js** avec **B
 | Technologie | Utilisation |
 |-------------|-------------|
 | ⚛️ React.js | Framework principal |
+| 🧭 React Router DOM | Gestion de la navigation |
 | ⚡ Vite | Environnement de développement |
 | 🎨 Bootstrap 5 | Mise en forme et responsive design |
-| 🧭 React Router DOM | Gestion des routes |
-| 🧩 Git & GitHub | Versioning et collaboration |
+| 🧹 ES Lint | Qualité du code |
+| ✨ Prettier | Indentation |
+| ☁️ API GitHub | Récupération des données du profil |
+| Bootstrap Icons | Icônes |
+| Git & GitHub | Versioning et collaboration |
 
 ---
 
-## 📦 Installation du projet
+## ♿ Accessibilité (A11y)
+
+- Balises sémantiques adaptées et cohérentes
+- Titres hierarchisés
+- ARIA :
+  - `aria-label` sur les icônes/boutons non textuels,
+  - `aria-labelledby` pour lier les sections et la modale à leurs titres,
+  - `aria-describedby` et `aria-invalid` sur les champs de formulaire et les messages d'erreur,
+  - Icônes décoratives masquées via `aria-hidden`
+- Inputs accompagnés de leurs labels accessibles
+- Progress Bar complète (value, min, max, role)
+- Modale accessible (focus, role dialog, aria-modal) avec titre et description
+- Contraste OK
+
+---
+
+## 🔎 SEO & Performance
+
+- balise `<title>` optimisée
+- SEO basique :
+  - Titres optimisées,
+  - Meta description
+  - Structure Hn,
+  - attributs alt,
+  - meta robots
+- Images avec alt descriptifs
+- Optimisation du DOM avec des composants réutilisables
+- Chargement rapide via Vite
+
+---
+
+## 📸 Aperçu du projet
+
+<div style="
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+align-items: start;
+gap: 16px;
+width: 100%;
+margin-bottom: 16px;
+box-sizing: border-box;
+border: 1px solid #d1d9e0;
+border-radius: 8px;
+padding: 16px;
+">
+  <img 
+  style="width: 100%; border-radius: 8px"
+  src="./public/readme/mockup-home-laptop.png"
+  alt="Mockup version desktop de la page d'accueil"
+  >
+  <img 
+  style="width: 100%; border-radius: 8px"
+  src="./public/readme/mockup-services-portfolio-tablet.png"
+  alt="Mockup version tablette des pages Services et Portfolio"
+  >
+  <img 
+  style="width: 100%; border-radius: 8px"
+  src="./public/readme/mockup-home-contact-legale-mobile.png"
+  alt="Mockup version mobile des pages Home avec menu ouvert, Contact et Mentions Légales"
+  >
+</div>
+
+Voici un aperçu visuel du site sur les trois formats (Desktop, Tablette, Mobile) pour chaque page du projet :
+
+<div style="
+padding: 16px;
+border: 1px solid #d1d9e0;
+border-radius: 8px">
+
+  <!-- PAGE D'ACCUEIL -->
+  <details>
+  <summary style="
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d1d9e0">
+    Accueil
+  </summary>
+
+  <div style="
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap
+  ">
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Desktop
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/home-screenshot/home-desktop.png"
+      alt="Aperçu du rendu de la page d'accueil version desktop"
+      width="400" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Tablette
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/home-screenshot/home-tablet.png"
+      alt="Aperçu du rendu de la page d'accueil version tablette"
+      width="260" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Mobile
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/home-screenshot/home-mobile.png"
+      alt="Aperçu du rendu de la page d'accueil version mobile"
+      width="180" />
+    </div>
+  </div>
+  </details>
+
+  <!-- PAGE SERVICES -->
+  <details>
+  <summary style="
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d1d9e0">
+    Services
+  </summary>
+
+  <div style="
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap
+  ">
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Desktop
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/services-screenshot/services-desktop.png"
+      alt="Aperçu du rendu de la page Services version desktop"
+      width="400" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Tablette
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/services-screenshot/services-tablet.png"
+      alt="Aperçu du rendu de la page Services version tablette"
+      width="260" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Mobile
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/services-screenshot/services-mobile.png"
+      alt="Aperçu du rendu de la page Services version mobile"
+      width="180" />
+    </div>
+  </div>
+  </details>
+
+  <!-- PAGE PORTFOLIO -->
+  <details>
+  <summary style="
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d1d9e0">
+    Portfolio
+  </summary>
+
+  <div style="
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap
+  ">
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Desktop
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/portfolio-screenshot/portfolio-desktop.png"
+      alt="Aperçu du rendu de la page Portfolio version desktop"
+      width="400" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Tablette
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/portfolio-screenshot/portfolio-tablet.png"
+      alt="Aperçu du rendu de la page Portfolio version tablette"
+      width="260" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Mobile
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/portfolio-screenshot/portfolio-mobile.png"
+      alt="Aperçu du rendu de la page Portfolio version mobile"
+      width="180" />
+    </div>
+  </div>
+  </details>
+
+  <!-- PAGE CONTACT -->
+  <details>
+  <summary style="
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d1d9e0">
+    Contact
+  </summary>
+
+  <div style="
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap
+  ">
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Desktop
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/contact-screenshot/contact-desktop.png"
+      alt="Aperçu du rendu de la page Contact version desktop"
+      width="400" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Tablette
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/contact-screenshot/contact-tablet.png"
+      alt="Aperçu du rendu de la page Contact version tablette"
+      width="260" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Mobile
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/contact-screenshot/contact-mobile.png"
+      alt="Aperçu du rendu de la page Contact version mobile"
+      width="180" />
+    </div>
+  </div>
+  </details>
+
+  <!-- PAGE MENTIONS-LÉGALES -->
+  <details>
+  <summary style="
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #d1d9e0">
+    Mentions légales
+  </summary>
+
+  <div style="
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  flex-wrap: wrap
+  ">
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Desktop
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/mentions-legales-screenshot/mentions-legales-desktop.png"
+      alt="Aperçu du rendu de la page Mentions Légales version desktop"
+      width="400" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Tablette
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/mentions-legales-screenshot/mentions-legales-tablet.png"
+      alt="Aperçu du rendu de la page Mentions Légales version tablette"
+      width="260" />
+    </div>
+    <div>
+      <div style="
+      color: #000;
+      background-color: #f6f8fa;
+      font-weight: 600;
+      border-radius: 10px 10px 0 0;
+      padding: 4px 8px;
+      text-align: center">
+          Mobile
+      </div>
+      <img
+      style="border-radius: 0 0 10px 10px"
+      src="./public/readme/mentions-legales-screenshot/mentions-legales-mobile.png"
+      alt="Aperçu du rendu de la page Mentions Légales version mobile"
+      width="180" />
+    </div>
+  </div>
+  </details>
+</div>
+
+---
+
+## 📦 Installation et lancement du projet en développement
 
 ```bash
 # Cloner le dépôt
@@ -78,6 +502,16 @@ npm install
 npm run dev
 ```
 
+## 🏗️ Installation de la version buildée et prévisualisation
+
+```bash
+# Build de production
+npm run build
+
+# Prévisualisation de la version buildée
+npx vite preview
+```
+
 ---
 
 ## 🧑‍💻 Auteur
@@ -88,228 +522,245 @@ npm run dev
 
 ## ✅ Validation finale
 
-Le projet fera l’objet :
+Le projet fait l’objet :
 - de commits explicites (Closes #1, etc.),
 - de captures de validation W3C,
+- de captures d'aperçu du site (mobile / tablette / desktop),
+- d'une optimsation SEO et A11y,
 - et d’un README complet.
 
-🧱 README provisoire : Il sera enrichi au fur et à mesure du développement.
+### 🕵 Audit
+
+<table style="width: 100%; border-collapse: collapse">
+  <tr>
+    <!-- COLONNE 1 : LIGHTHOUSE DESKTOP -->
+    <td style="width:50%; vertical-align:top; padding:0 8px 0 0;">
+      <div style="
+        border:1px solid #d1d9e0;
+        border-radius:8px;
+        overflow:hidden;
+      ">
+        <div style="
+          background:#f6f8fa;
+          color: #000;
+          padding:8px 12px;
+          font-weight:600;
+        ">
+          Score Lighthouse – Desktop
+        </div>
+        <!-- SCORING -->
+        <div style="
+          padding:16px;
+          display:flex;
+          flex-wrap:wrap;
+          justify-content:center;
+          gap:24px;
+        ">
+          <div style="text-align:center;">
+            <div style="
+              width:65px; height:65px; border-radius:50%;
+              border:4px solid #00c853; background:#071e11;
+              display:flex; align-items:center; justify-content:center;
+              font-size:1.6rem; font-weight:bold; color:#00c853;">
+              100
+            </div>
+            <div style="margin-top:8px; font-weight:600;">Performance</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="
+              width:65px;
+              height:65px;
+              border-radius:50%;
+              border:4px solid #00c853;
+              background:#071e11;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              font-size:1.6rem;
+              font-weight:bold;
+              color:#00c853;">
+              100
+            </div>
+            <div style="margin-top:8px; font-weight:600;">Accessibility</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="
+              width:65px;
+              height:65px;
+              border-radius:50%;
+              border:4px solid #00c853;
+              background:#071e11;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              font-size:1.6rem;
+              font-weight:bold;
+              color:#00c853;">
+              100
+            </div>
+            <div style="margin-top:8px; font-weight:600;">Best Practices</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="
+              width:65px;
+              height:65px;
+              border-radius:50%;
+              border:4px solid #00c853;
+              background:#071e11;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              font-size:1.6rem;
+              font-weight:bold;
+              color:#00c853;">
+              100
+            </div>
+            <div style="margin-top:8px; font-weight:600;">SEO</div>
+          </div>
+        </div>
+        <!-- DOWNLOAD PDF -->
+        <a
+        href="./public/readme/audit-validation/lighthouse-audit/lighthouse-desktop.pdf"
+        style="display: block; margin-bottom: 10px; text-decoration: underline; text-align: center
+        ">
+        ➜] Version PDF
+        </a>
+      </div>
+    </td>
+    <!-- COLONNE 2 : LIGHTHOUSE MOBILE -->
+    <td style="width:50%; vertical-align:top; padding:0 0 0 8px">
+      <div style="
+        border:1px solid #d1d9e0;
+        border-radius:8px;
+        overflow:hidden;
+      ">
+        <div style="
+          background:#f6f8fa;
+          color: #000;
+          padding:8px 12px;
+          font-weight:600;
+        ">
+          Score Lighthouse – Mobile
+        </div>
+        <!-- SCORING -->
+        <div style="
+          padding:16px;
+          display:flex;
+          flex-wrap:wrap;
+          justify-content:center;
+          gap:24px;
+        ">
+          <div style="text-align:center;">
+            <div style="
+              width:65px;
+              height:65px;
+              border-radius:50%;
+              border:4px solid #ff9100;
+              background:#261900;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              font-size:1.6rem;
+              font-weight:bold;
+              color:#ff9100;">
+              80
+            </div>
+            <div style="margin-top:8px; font-weight:600;">Performance</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="
+              width:65px;
+              height:65px;
+              border-radius:50%;
+              border:4px solid #00c853;
+              background:#071e11;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              font-size:1.6rem;
+              font-weight:bold;
+              color:#00c853;">
+              100
+            </div>
+            <div style="margin-top:8px; font-weight:600;">Accessibility</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="
+              width:65px;
+              height:65px;
+              border-radius:50%;
+              border:4px solid #00c853;
+              background:#071e11;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              font-size:1.6rem;
+              font-weight:bold;
+              color:#00c853;">
+              100
+            </div>
+            <div style="margin-top:8px; font-weight:600;">Best Practices</div>
+          </div>
+          <div style="text-align:center;">
+            <div style="
+              width:65px;
+              height:65px;
+              border-radius:50%;
+              border:4px solid #00c853;
+              background:#071e11;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              font-size:1.6rem;
+              font-weight:bold; color:#00c853;">
+              100
+            </div>
+            <div style="margin-top:8px; font-weight:600;">SEO</div>
+          </div>
+        </div>
+                <!-- DOWNLOAD PDF -->
+        <a
+        href="./public/readme/audit-validation/lighthouse-audit/lighthouse-mobile.pdf"
+        style="display: block; margin-bottom: 10px; text-decoration: underline; text-align: center
+        ">
+        ➜] Version PDF
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
+
+### ✔️ Validations W3C
+
+| Type | Fichier | PDF |
+|------|---------|------|
+| HTML | index.html | [📥 Télécharger](./public/readme/audit-validation/w3c-audit/w3c-html.pdf) |
+| CSS | global.css | [📥 Télécharger](./public/readme/audit-validation/w3c-audit/w3c-css-global.pdf) |
+| CSS | home.css | [📥 Télécharger](./public/readme/audit-validation/w3c-audit/w3c-css-home.pdf) |
+| CSS | portfolio.css | [📥 Télécharger](./public/readme/audit-validation/w3c-audit/w3c-css-portfolio.pdf) |
+| CSS | contact.css | [📥 Télécharger](./public/readme/audit-validation/w3c-audit/w3c-css-contact.pdf) |
 
 ---
 
 ## 🔄 Historique des mises à jour
 
-### Issue #1 - Initialisation du projet
-- Initialisation de la structure du projet React (Vite + Bootstrap)
-- Nettoyage des fichiers du projet
-- Ajout des fichiers `reset.css` et `global.css`
-- Intégration de la police *Nunito Sans*
-- Mise en place du favicon PNG
-
-*Mise à jour - 3 novembre 2025*
-
----
-
-### Issue #2 - Navbar + Routes + Footer
-
-- Installation de la dépendance `react-router-dom`
-- Création et intégration de la `Navbar` (Bootstrap + React Router)
-- Ajout du `Footer` placeholder commun
-- Mise en place des routes : `/`, `/services`, `/portfolio`, `contact`, `/mentions-légales`
-- Gestion du lien actif et des effets hover (CSS)
-- Vérification du responsive (menu burger)
-- Respect de la palette Bootstrap (`bg-dark`, `text-light`) et ajustement via CSS
-
-*Mise à jour - 5 novembre 2025*
+| Nom de la mise à jour | Mis à jour le... |
+|-----------------------|------------------------|
+| Issue #1 - Initialisation du projet (Vite + Bootstrap + Rooter) | *3 novembre 2025* |
+| Issue #2 - Navbar + Routes + Footer | *5 novembre 2025* |
+| Issue #3 - Footer commun | *6 novembre 2025* |
+| Issue #4 - Home (Hero + About + Skills) | *8 novembre 2025* |
+| Issue #5 - Services (Card + Titre) | *11 novembre 2025* |
+| Issue #6 - Portfolio (Cards + Boutons) | *12 novembre 2025* |
+| Issue #7 – Contact (Formulaire + Coordonnées + Google Map) | *16 novembre 2025* |
+| Issue #8 – Mentions légales (Accordéon) | *17 novembre 2025* |
+| Issue #9 - Modale GitHub API | *18 novembre 2025* |
+| Issue #17 - Correctifs globaux et vérification | *19 novembre 2025* |
+| Issue #22 - Transitions CSS | *20 novembre 2025* |
+| Issue #10 - README final + Vérifications | *22 novembre 2025* |
 
 ---
 
-### Issue #3 - Footer commun
-
-- Création du composant `Footer.jsx` :
-  - Structure en 3 colonnes (coordonnées, liens utiles, réalisations)
-  - Intégration des icônes Bootstrap (GitHub, Twitter, LinkedIn)
-  - Liens internes gérés via `NavLink` de React Router DOM
-  - Application de classes utilitaires Bootstrap pour la mise en page responsive
-  - Gestion du hover sur les icônes sociales
-- Ajustement du layout global (`global.css`) :
-  - Mise en place du `display: flex` et `min-height: 100vh` sur `#root`
-  - Alignement du footer en bas de page (sticky footer)
-  - Harmonisation des paddings horizontaux
-- Ajustement léger de la Navbar :
-  - Suppression du `fs-bold` sur le logo textuel
-  - Ajustement des paddings horizontaux
-
-### Correctifs mineurs
-
-- Correction de l'attribut `rel="noopener noreferrer"` pour les liens externes
-- Documentation mise à jour (`README.md`)
-
-*Mise à jour - 6 novembre 2025*
-
----
-
-### Issue #4 - Home (Hero + About + Skills)
-
-- Importation des images dans `src/assets/images`
-- Création du hero `Hero.jsx` :
-  - Insertion de l'image d'arrière plan en pleine écran + overlay légé
-  - Mise en place des titres `h1` et `h2`
-  - Mise en place du bouton "En savoir plus"
-  - Création du fichier `home.css` pour les styles de la page d'accueil
-- Création du composant `AboutAndSkills.jsx`
-  - Création des titres de section via `SectionDivider.jsx` (avec ligne de marque de section)
-  - Mise en forme 2 colonnes desktop/tablet et 1 colonne sur mobile
-  - Alignement responsive du contenu avec le footer
-- Intégration de la modale API GitHub (placeholder)
-
-### Correctifs mineurs
-
-- Suppression du `mt-5` du footer
-- Rectification de la fonctionnalité du "sommaire" du `README.md`
-
-*Mise à jour - 8 novembre 2025*
-
----
-
-### Issue #5 - Services (Card + Titre)
-
-- Import et intégration de la bannière décorative
-- Adaptation du composant `SectionDivider.jsx` et création de deux variants
-- Mise en forme des cards Services 3 colonnes sur desktop/tablet et 1 colonne sur mobile
-- Création et application d'un CSS global pour les cards `.card-hover`. Au survol :
-  - Ombre douce (Bootstrap)
-  - Background légèrement plus sombre (gris)
-- Intégration des icônes décorative Bootstrap pour chaque card
-- Respect de la sémantique des titres :
-  - `<h1>` (hidden) pour le titre de la page
-  - `<h2>` pour le titre de section
-  - `<h3>` pour les titres de sous-section (services)
-
-### Correctifs mineurs
-
-- Positionnement du `main` en fonction de la navbar (global) + adaptation de la hauteur du `hero` (Home page)
-- Modification du composant `SectionDivider.jsx` dans l'objectif' d'adapter sémantiquement le titre des sections (adaptation des appels du composant dans `AboutAndSkills.jsx`) + Ajout de `aria-hidden` pour ignorer l'elément au niveau accessibilité
-- Suppression de `.divider-line` dans `global.css` qui est maintenant géré directement dans le composant `SectionDivider.jsx`
-- Ajustement des paddings responsive du `Footer` et du `Main` via la création d'un composant global `Container.jsx`
-- Rectification de la fonctionnalité du "sommaire" du `README.md`
-
-*Mise à jour - 11 novembre 2025*
-
----
-
-### Issue #6 - Portfolio (Cards + Boutons)
-
-- Création de la page porfolio avec les composants `SectionDivider.jsx` et `CardPorfolio.jsx`
-- Création d'un fichier `project.js` dans `src/data` afin de centraliser les données des projets du portfolio et rendre le composant `CardPortfolio.jsx` plus facilement maintenable
-- Création des projets et importation des données dans `CardPorfolio.jsx` :
-  - Mise en forme des cards Services 3 colonnes sur desktop/tablet et 1 colonne sur mobile
-  - Réutilisation de la classe de style `.card-hover` sur les cards
-  - Création et intégration des boutons sur chaque projet (sans lien de redirection)
-    - Création d'une classe de style pour les boutons dans portfolio.css (`.btn-portfolio-hover`)
-
-### Correctifs mineurs
-
-- Refactorisation des composants `Container.jsx` et `SectionDivider.jsx` afin d'y centraliser les propriétés globales utilisées sur l'ensemble du site (margin, padding, etc.)
-
-*Mise à jour - 12 novembre 2025*
-
-### Issue #7 – Contact (Formulaire + Coordonnées + Google Map)
-
-- Création et intégration de la page `Contact.jsx`
-  - Mise en forme 2 colonnes desktop/tablet et 1 colonne sur mobile
-- Construction du formulaire de contact (`FormContact.jsx`) :
-  - Gestion des `useState` pour chaque champ (nom, email, téléphone, sujet, message)
-  - Système de validation dynamique (`onChange` / `onBlur`)
-  - Dictionnaires d’erreurs + affichage conditionnel (is-invalid, invalid-feedback)
-  - Message de succès dynamique et réinitialisation des champs
-- Intégration des coordonnées personnelles + icônes Bootstrap
-- Mise en place et intégration d'une Google Map intégrée (`iframe`) :
-  - Adaptation complète sur Desktop (map en hauteur pleine via flex)
-  - Adaptation sur mobile (hauteur fixe 400px)
-  - Wrapper `.map-wrapper` responsive
-- Ajustements CSS spécifiques (`contact.css`) :
-  - Gestion du layout via `.contact-row`, `.column-right`, `.map-wrapper`
-  - Style responsive via media queries
-- Ajustement du design du bouton + message succès
-
-*Mise à jour – 16 novembre 2025*
-
-### Issue #8 – Mentions légales (Accordéon)
-
-- Création et intégration de la page `MentionsLegales.jsx`
-- Desindexation de la page via `react-helmet`
-- Mise en place d’une structure sémantique :
-  - Section principale avec `aria-labelledby`
-  - Titre `h1` masqué visuellement
-  - Utilisation du composant `SectionDivider.jsx`
-- Création d’un accordéon Bootstrap fonctionnel comprenant :
-  - **Éditeur du site**
-  - **Hébergeur**
-  - **Crédits**
-- Gestion des états ouverts/fermés à l’initialisation via `collapse` / `show`
-- Injection propre des données via le tableau `mentionsData.jsx` dans le but de faciliter la maintenance
-- Intégration des coordonnées avec icônes Bootstrap (adresse, téléphone, email)
-- Intégration des crédits :
-  - Liens externes avec `target="_blank"` et `rel="noopener noreferrer"`
-  - Mise en forme en italique via `<em>`
-
-### Correctifs mineurs
-
-- Ajustement du margin-top de `divider-line` dans le composant `SectionDivider.jsx` pour correspondance avec la maquette
-  - `mt-2` → `mt-4`
-
-*Mise à jour - 17 novembre 2025*
-
-### Issue #9 - Modale GitHub API
-
-- Création du composant `ModalGitHubItem.jsx` pour structurer l'affichage des informations
-- Mise en place d'un tableau de donnée `githubFields` dans `modalGitHubData.js` (clé, icône, type, href, label)
-- Intégration des données et des icônes conformément aux maquettes (avatar, nom avec lien externe vers le profil github, localisation, biographie, repositories, followers et following)
-- Mise en forme de la modale :
-  - centrage de la modale dans le viewport
-  - 2 colonnes desktop/tablet et 1 colonne sur mobile
-  - séparation des items par une bordure
-  - item comportant un padding-start n'affectant pas les bordures
-  - application de `float: left` sur les icônes pour les intégrer à leur paragraphe respectif
-- `header` et `footer` de la modale mis en place lors de la création de la modale en `placeholder` (issue #4)
-  - Titre h5
-  - Bouton de fermeture de la modale : croix + bouton "Fermer"
-- Les couleurs des bordures ont été corrigées
-
-### Correctifs mineurs
-
-- Docs (README) :
-  - Correction de la date de mise à jour de l'issue #8
-  - Intégration de la mise à jour de l'issue #8 dans le sommaire
-
-*Mise à jour - 18 novembre 2025*
-
-### Issue #17 - Correctifs globaux et vérification
-- Refonte sémantique de l'ensemble du projet
-  - vérification et correction des balises
-  - titres hiérarchisés
-  - titres visibles/masqués pour l'accessibilité
-  - gestion des rôles sur les balises nécessaires
-- Accessibilité (A11y)
-  - ajout d'`aria-label`, `aria-labelledby`, `aria-hidden`, `aria-describedby`
-  - labels accessible pour les inputs
-  - structure de formulaire + refactorisation :
-    - création des composants `<FormInput />` et `<FormTextarea />` réutilisables
-- Progress bars
-  - ajout du rôle obligatoire
-  - ajout des attributs aria (`aria-value`, `aria-valuemin`, ...)
-- Indentation de l'ensemble des codes
-
-*Mise à jour - 19 novembre 2025*
-
-### Issue #22 - Transitions CSS
-- Application des transitions globales sur les élements interactifs
-- Transfert des imports CSS (`home.css`, `portfolio.css`, `contact.css`) vers `global.css` afin d'éviter les conflits
-- Application de transition sur des élements interactifs plus spécifiques :
-  - cards
-  - icons
-  - modal
-  - nav-link
-
-*Mise à jour - 20 novembre 2025
+## ✉️ Livraison du projet
+- Projet livré le 23 novembre 2025
+- Destinataire : [Centre Européen de Formation](https://www.centre-europeen-formation.fr/)
