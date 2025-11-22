@@ -158,7 +158,6 @@ border-radius: 8px">
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  flex-wrap: wrap
   ">
     <div>
       <div style="
@@ -226,7 +225,6 @@ border-radius: 8px">
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  flex-wrap: wrap
   ">
     <div>
       <div style="
@@ -294,7 +292,6 @@ border-radius: 8px">
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  flex-wrap: wrap
   ">
     <div>
       <div style="
@@ -362,7 +359,6 @@ border-radius: 8px">
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  flex-wrap: wrap
   ">
     <div>
       <div style="
@@ -430,7 +426,6 @@ border-radius: 8px">
   display: flex;
   gap: 16px;
   align-items: flex-start;
-  flex-wrap: wrap
   ">
     <div>
       <div style="
