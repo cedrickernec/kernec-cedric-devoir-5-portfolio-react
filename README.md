@@ -15,18 +15,18 @@ Ce projet consiste à créer un **portfolio professionnel** avec **React**, **Bo
 
 ## SOMMAIRE
 
-- [Objectifs du projet](#objectifs-du-projet)
-- [Fonctionnalités principales](#fonctionnalites-principales)
-- [Technologies utilisées](#technologies-utilisees)
-- [Accessibilité (A11y)](#accessibilite-a11y)
-- [SEO & Performance](#seo--performance)
-- [Aperçu du projet](#apercu-du-projet)
-- [Installation et lancement du projet en développement](#installation-et-lancement-du-projet-en-developpement)
-- [Installation de la version buildée et prévisualisation](#installation-de-la-version-buildee-et-previsualisation)
-- [Auteur](#auteur)
-- [Validation finale](#validation-finale)
-- [Historique des mises à jour](#historique-des-mises-a-jour)
-- [Livraison du projet](#livraison-du-projet)
+- [Objectifs du projet](#-objectifs-du-projet)
+- [Fonctionnalités principales](#-fonctionnalités-principales)
+- [Technologies utilisées](#-technologies-utilisées)
+- [Accessibilité (A11y)](#-accessibilité-a11y)
+- [SEO & Performance](#-seo--performance)
+- [Aperçu du projet](#-aperçu-du-projet)
+- [Installation et lancement du projet en développement](#-installation-et-lancement-du-projet-en-développement)
+- [Installation de la version buildée et prévisualisation](#-installation-de-la-version-buildée-et-prévisualisation)
+- [Auteur](#-auteur)
+- [Validation finale](#-validation-finale)
+- [Historique des mises à jour](#-historique-des-mises-à-jour)
+- [Livraison du projet](#-livraison-du-projet)
 
 ---
 
