@@ -1,16 +1,17 @@
 // Footer commun avec navigation React Router + Bootstrap
-import { NavLink } from "react-router-dom";
+import ScrollLink from "../common/ScrollLink";
 import Container from "../common/Container";
+import { portfolioProjects } from "../../data/projects";
 
 export default function Footer() {
   return (
     <footer className="bg-dark text-white text-center">
-      <h2 className="visually-hidden">Informations complémentaire</h2>
       <Container>
+        <h2 className="visually-hidden">Informations complémentaire</h2>
         <div className="row text-start">
           {/* Colonne 1 */}
           <div className="col-md-4">
-              <h5 className="mb-2">John Doe</h5>
+            <p className="footer-title mb-2">John Doe</p>
             <address>
               <p>40 rue Laure Diebold</p>
               <p>60009 Lyon, France</p>
@@ -26,17 +27,23 @@ export default function Footer() {
                 aria-label="Lien vers le profil GitHub"
                 title="GitHub"
               >
-                <i className="bi bi-github d-inline-block my-0 fs-4" aria-hidden="true"></i>
+                <i
+                  className="bi bi-github d-inline-block my-0 fs-4"
+                  aria-hidden="true"
+                ></i>
               </a>
               <a
                 href="https://x.com/"
                 className="text-secondary me-3"
                 target="_blank"
-                rel="noopenner noreferrer"
+                rel="noopener noreferrer"
                 aria-label="Lien vers le profil Twitter"
                 title="Twitter"
               >
-                <i className="bi bi-twitter d-inline-block my-0 fs-4" aria-hidden="true"></i>
+                <i
+                  className="bi bi-twitter d-inline-block my-0 fs-4"
+                  aria-hidden="true"
+                ></i>
               </a>
               <a
                 href="https://linkedin.com/"
@@ -46,55 +53,45 @@ export default function Footer() {
                 aria-label="Lien vers le profil LinkedIn"
                 title="LinkedIn"
               >
-                <i className="bi bi-linkedin d-inline-block my-0 fs-4" aria-hidden="true"></i>
+                <i
+                  className="bi bi-linkedin d-inline-block my-0 fs-4"
+                  aria-hidden="true"
+                ></i>
               </a>
             </div>
           </div>
 
           {/* Colonne 2 */}
           <div className="mt-2 col-md-4 mt-md-0">
-            <h5 className="mb-2">Liens utiles</h5>
+            <p className="footer-title mb-2">Liens utiles</p>
             <ul className="list-unstyled">
               <li>
-                <NavLink to="/">Accueil</NavLink>
+                <ScrollLink to="/">Accueil</ScrollLink>
               </li>
               <li>
-                <NavLink to="/services">Services</NavLink>
+                <ScrollLink to="/services">Services</ScrollLink>
               </li>
               <li>
-                <NavLink to="/portfolio">Portfolio</NavLink>
+                <ScrollLink to="/portfolio">Portfolio</ScrollLink>
               </li>
               <li>
-                <NavLink to="/contact">Me contacter</NavLink>
+                <ScrollLink to="/contact">Me contacter</ScrollLink>
               </li>
               <li>
-                <NavLink to="/mentions-legales">Mentions légales</NavLink>
+                <ScrollLink to="/mentions-legales">Mentions légales</ScrollLink>
               </li>
             </ul>
           </div>
 
           {/* Colonne 3 */}
           <div className="mt-2 col-md-4 mt-md-0">
-            <h5 className="mb-2">Mes dernières réalisations</h5>
+            <p className="footer-title mb-2">Mes dernières réalisations</p>
             <ul className="list-unstyled">
-              <li>
-                <NavLink to="/portfolio">Fresh Food</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">Restaurant Akira</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">Espace bien-être</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">SEO</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">Création d'une API</NavLink>
-              </li>
-              <li>
-                <NavLink to="/portfolio">Maquette d'un site</NavLink>
-              </li>
+              {portfolioProjects.map((project) => (
+                <li key={project.id}>
+                  <ScrollLink to="/portfolio">{project.title}</ScrollLink>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

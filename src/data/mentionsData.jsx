@@ -10,37 +10,37 @@ export const mentionsSection = [
           {/* Adresse postale */}
           <div className="d-flex gap-2">
             <i className="bi bi-map" aria-hidden="true" />
-            <span id="adress-label" className="visually-hidden">
+            <span className="visually-hidden">
               Adresse postale :
             </span>
-            <p aria-labelledby="adress-label">40 rue Laure Diebold</p>
+            <p>40 rue Laure Diebold</p>
           </div>
 
           {/* Code postale / ville / pays */}
           <div className="d-flex gap-2">
             <i className="bi bi-geo-alt" aria-hidden="true" />
-            <span id="city-label" className="visually-hidden">
+            <span className="visually-hidden">
               Code postal, ville et pays :
             </span>
-            <p aria-labelledby="city-label">69009 Lyon, France</p>
+            <p>69009 Lyon, France</p>
           </div>
 
           {/* Téléphone */}
           <div className="d-flex gap-2">
             <i className="bi bi-phone" aria-hidden="true" />
-            <span id="tel-label" className="visually-hidden">
+            <span className="visually-hidden">
               Numéro de téléphone :
             </span>
-            <p aria-labelledby="tel-label">10 20 30 40 50</p>
+            <p>10 20 30 40 50</p>
           </div>
 
           {/* Email */}
           <div className="d-flex gap-2">
             <i className="bi bi-envelope-at" aria-hidden="true" />
-            <span id="email-label" className="visually-hidden">
+            <span className="visually-hidden">
               Adresse email :
             </span>
-            <p aria-labelledby="email-label">john.doe@gmail.com</p>
+            <p>john.doe@gmail.com</p>
           </div>
         </address>
       </div>

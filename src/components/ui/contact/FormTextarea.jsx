@@ -1,12 +1,12 @@
-export default function FormInput({
+export default function FormTextarea({
   id,
-  type = "text",
   label,
   value,
   error,
   onChange,
   onBlur,
   placeholder,
+  rows = 5,
 }) {
   return (
     <div>
@@ -14,16 +14,17 @@ export default function FormInput({
         {label}
       </label>
 
-      <input
+      <textarea
         id={id}
-        type={type}
+        className={`form-control ${error ? "is-invalid" : ""}`}
         value={value}
         onChange={onChange}
         onBlur={onBlur}
         placeholder={placeholder}
-        className={`form-control ${error ? "is-invalid" : ""}`}
+        rows={rows}
         aria-invalid={error ? "true" : "false"}
         aria-describedby={error ? `${id}-error` : undefined}
+        aria-required="true"
       />
 
       {error && (

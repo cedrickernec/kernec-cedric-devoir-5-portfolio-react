@@ -10,13 +10,18 @@ export default function MentionsLegales() {
   return (
     <>
       <Helmet>
-        <meta name="robots" content="noindex,nofollow" />
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Mentions légales | John Doe - Développeur Web et Web Mobile</title>
+        <meta
+          name="description"
+          content="Mentions légales du site portfolio de John Doe : informations concernant l'éditeur, l'hébergeur et les crédits."
+        />
       </Helmet>
 
       <section aria-labelledby="mentions-legales-title">
         <Container>
           <h1 id="mentions-legales-title" className="visually-hidden">
-            Section Mentions légales du site
+            Mentions légales du site
           </h1>
           <SectionDivider title="Mentions légales" variant="centered" />
 

@@ -1,4 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/common/ScrollToTop";
+
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
 
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -6,12 +10,10 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import MentionsLegales from "./pages/MentionsLegales";
 
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
-
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop/>
       <Navbar />
       <main>
         <Routes>

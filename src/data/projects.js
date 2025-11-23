@@ -12,7 +12,9 @@ export const portfolioProjects = [
         title: "Fresh Food",
         description: "Site de vente de produits frais en ligne",
         link: "#",
-        footer: "Site réalisé avec PHP et MySQL"
+        footer: {
+            label: "Site réalisé avec PHP et MySQL"
+        }
     },
     {
         id: 2,
@@ -20,7 +22,9 @@ export const portfolioProjects = [
         title: "Restaurant Akira",
         description: "Site de vente de produits frais en ligne",
         link: "#",
-        footer: "Site réalisé avec WordPress"
+        footer: {
+            label: "Site réalisé avec WordPress"
+        }
     },
     {
         id: 3,
@@ -28,7 +32,10 @@ export const portfolioProjects = [
         title: "Espace bien-être",
         description: "Site de vente de produits frais en ligne",
         link: "#",
-        footer: "Site réalisé avec LARAVEL"
+        footer: {
+            label: "Site réalisé avec",
+            tech: "Laravel"
+        }
     },
     {
         id: 4,
@@ -36,15 +43,20 @@ export const portfolioProjects = [
         title: "SEO",
         description: "Amélioration du référencement d'un site e-commerce",
         link: "#",
-        footer: "Utilisation des outils SEO"
+        footer: {
+            label: "Utilisation des outils SEO"
+        }
     },
     {
         id: 5,
         image: project5,
         title: "Création d'une API",
-        description: "Création d'une API RESTFULL publique",
+        description: "Création d'une API RESTful publique",
         link: "#",
-        footer: "PHP -SYMFONY"
+        footer: {
+            label: "PHP -",
+            tech: "Symfony"
+        }
     },
     {
         id: 6,
@@ -52,6 +64,9 @@ export const portfolioProjects = [
         title: "Maquette d'un site web",
         description: "Création du prototype d'un site",
         link: "#",
-        footer: "Réalisé avec FIGMA"
+        footer: {
+            label: "Réalisé avec",
+            tech: "Figma"
+        }
     }
 ]

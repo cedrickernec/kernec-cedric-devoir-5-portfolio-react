@@ -1,6 +1,6 @@
-import { portfolioProjects } from "../../data/projects";
+import { portfolioProjects } from "../../../data/projects";
 
-export default function CardPorfolio() {
+export default function CardPortfolio() {
   return (
     <div className="row row-cols-1 row-cols-md-3 g-3">
       {portfolioProjects.map((project) => (
@@ -9,12 +9,13 @@ export default function CardPorfolio() {
             <img
               src={project.image}
               className="card-img-top"
-              alt={`Aperçu du proejt ${project.title}`}
+              alt={`Aperçu du projet ${project.title}`}
             />
 
             <div className="card-body">
               <h3 className="card-title fw-bold">{project.title}</h3>
               <p className="card-text">{project.description}</p>
+              {project.link && (
               <a
                 href={project.link}
                 className="btn btn-primary"
@@ -23,10 +24,14 @@ export default function CardPorfolio() {
               >
                 Voir le site
               </a>
+              )}
             </div>
 
             <div className="card-footer">
-              <small className="text-body-secondary">{project.footer}</small>
+              <small className="text-body-secondary">
+                <span>{project.footer.label}</span>
+                <span className="tech-uppercase">{" "}{project.footer.tech}</span>
+              </small>
             </div>
           </div>
         </div>

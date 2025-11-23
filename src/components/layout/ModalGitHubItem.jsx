@@ -6,7 +6,7 @@ export default function ModalGitHubItem({ icon, label, value, type, href }) {
       <div className="ps-3">
         <p className="text-start mb-0">
           <i className={`${icon} github-item-icon me-2`} aria-hidden="true" />
-          {type === "link" ? (
+          {type === "link" && href ? (
             <a
               href={href}
               target="_blank"

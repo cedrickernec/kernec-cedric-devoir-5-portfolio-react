@@ -1,7 +1,7 @@
 @import './reset.css';
-@import "./home.css";
-@import "./portfolio.css";
-@import "./contact.css";
+@import "../pages/home.css";
+@import "../pages/portfolio.css";
+@import "../pages/contact.css";
 
 /* ==========================================
    GLOBAL STYLES
@@ -68,6 +68,11 @@ footer * {
   margin: 0.1rem 0;
 }
 
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
 footer .bi:hover {
   color: white;
 }
@@ -82,6 +87,11 @@ footer a:hover {
 }
 
 /* Cards */
+
+.card-title {
+  font-size: 1.5rem;
+}
+
 .card-hover:hover {
     background-color: #efefef;
     box-shadow: var(--bs-box-shadow-sm);
