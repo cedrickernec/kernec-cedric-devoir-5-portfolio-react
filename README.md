@@ -1,4 +1,4 @@
-# 🌐 Portfolio React – Devoir 5 CEF
+# Portfolio React – Devoir 5 CEF
 
 ![React](https://img.shields.io/badge/React-19.1.1-61DAFB?logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7.1.7-646CFF?logo=vite&logoColor=white)
@@ -30,7 +30,7 @@ Ce projet consiste à créer un **portfolio professionnel** avec **React**, **Bo
 
 ---
 
-## 🎯 Objectifs du projet
+## Objectifs du projet
 
 - Créer une application React fonctionnelle et responsive (mobile / tablette / desktop),
 - Utiliser **React Router** pour la navigation entre les pages :
@@ -46,7 +46,7 @@ Ce projet consiste à créer un **portfolio professionnel** avec **React**, **Bo
 
 ---
 
-## 🚀 Fonctionnalités principales
+## Fonctionnalités principales
 
 - 5 pages responsive (mobile / tablette / Desktop) : Accueil, Services, Portfolio, Contact, Mentions Légales
 - Navbar et Footer + scroll-to-top sur les liens des pages internes du footer
@@ -58,7 +58,7 @@ Ce projet consiste à créer un **portfolio professionnel** avec **React**, **Bo
 
 ---
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 | Technologie | Utilisation |
 |-------------|-------------|
@@ -74,7 +74,7 @@ Ce projet consiste à créer un **portfolio professionnel** avec **React**, **Bo
 
 ---
 
-## ♿ Accessibilité (A11y)
+## Accessibilité (A11y)
 
 - Balises sémantiques adaptées et cohérentes
 - Titres hierarchisés
@@ -90,7 +90,7 @@ Ce projet consiste à créer un **portfolio professionnel** avec **React**, **Bo
 
 ---
 
-## 🔎 SEO & Performance
+## SEO & Performance
 
 - balise `<title>` optimisée
 - SEO basique :
@@ -105,7 +105,7 @@ Ce projet consiste à créer un **portfolio professionnel** avec **React**, **Bo
 
 ---
 
-## 📸 Aperçu du projet
+## Aperçu du projet
 
 <div style="
 display: grid;
@@ -481,7 +481,7 @@ border-radius: 8px">
 
 ---
 
-## 📦 Installation et lancement du projet en développement
+## Installation et lancement du projet en développement
 
 ```bash
 # Cloner le dépôt
@@ -497,7 +497,7 @@ npm install
 npm run dev
 ```
 
-## 🏗️ Installation de la version buildée et prévisualisation
+## Installation de la version buildée et prévisualisation
 
 ```bash
 # Build de production
@@ -509,13 +509,13 @@ npx vite preview
 
 ---
 
-## 🧑‍💻 Auteur
+## Auteur
 
 [![GitHub - cedrickernec](https://img.shields.io/badge/GitHub-cedrickernec-black?logo=github)](https://github.com/cedrickernec)
 
 ---
 
-## ✅ Validation finale
+## Validation finale
 
 Le projet fait l’objet :
 - de commits explicites (Closes #1, etc.),
@@ -524,7 +524,7 @@ Le projet fait l’objet :
 - d'une optimsation SEO et A11y,
 - et d’un README complet.
 
-### 🕵 Audit
+### Audit
 
 <table style="width: 100%; border-collapse: collapse">
   <tr>
@@ -725,7 +725,7 @@ Le projet fait l’objet :
   </tr>
 </table>
 
-### ✔️ Validations W3C
+### Validations W3C
 
 | Type | Fichier | PDF |
 |------|---------|------|
@@ -737,7 +737,7 @@ Le projet fait l’objet :
 
 ---
 
-## 🔄 Historique des mises à jour
+## Historique des mises à jour
 
 | Nom de la mise à jour | Mis à jour le... |
 |-----------------------|------------------------|
@@ -756,6 +756,6 @@ Le projet fait l’objet :
 
 ---
 
-## ✉️ Livraison du projet
+## Livraison du projet
 - Projet livré le 23 novembre 2025
 - Destinataire : [Centre Européen de Formation](https://www.centre-europeen-formation.fr/)
